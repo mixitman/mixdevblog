@@ -56,7 +56,6 @@ img.bg {
     top: 0;
     left: 0;
     z-index: -2;
-    transform-style: preserve-3d;
 }
 
 .blur {
