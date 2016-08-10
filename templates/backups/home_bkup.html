@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags crispy_forms_filters %}
+
+{% block head_title %}Welcome | {{ block.super }}{% endblock %}
+
+<style>
+{% block style %}
+.jumbotron {
+    background-color: #000000;
+}
+.jumbotron, .jumbotron h1 p{
+    color: #FFFFFF;
+}
+.jumbomovie {
+    background-color: black;
+    height: 300px;
+}
+{% endblock %}
+</style>
+
+
+{% block jumbotron %}
+<div class="jumbotron">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+        <h1>Try Django</h1>
+        <p>Bacon ipsum dolor amet ribeye corned beef doner, ham hock meatloaf short loin turducken leberkas shoulder.</p>
+        <p>Pork loin venison corned beef pancetta, turducken cupim ball tip sirloin beef ribs.</p>
+        <p><a class="btn btn-lg btn-danger" href="" role="button">Join Us &raquo;</a>
+        </p>
+        </div>
+        <div class="jumbomovie col-sm-6">
+
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-xs-3 pull-right">
+
+        <p class="lead text-align-center">{{ title }}</p>
+
+        <form method="POST" action="">{% csrf_token %}
+        {{ form|crispy }}
+        <input class="btn btn-primary" type="submit" value="Sign Up" />
+        </form>
+    </div>
+    <div class="col-sm-3">
+        <p class="lead text-align-center">Built with Django &amp; Bootstrap</p>
+    </div>
+    <div class="col-sm-3">
+        <p class="lead text-align-center">Project Progress: Good!</p>
+    </div>
+    <div class="col-sm-3">
+        <p class="lead text-align-center">Always Open Source</p>
+    </div>
+</div>  <!-- /row -->
+{% endblock %}

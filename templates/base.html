@@ -1,0 +1,79 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{% static 'img/ico/favicon.ico' %}">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    {#    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">#}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
+          integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Reem+Kufi" rel="stylesheet">
+    <!-- Custom styles for this template -->
+
+    <link href="{% static 'css/carousel.css' %}" rel="stylesheet">
+    <link href="{% static 'css/custom2.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<!-- navbar -->
+{% include 'navbar.html' %}
+<!-- /.navbar -->
+
+    {% include 'jumbotron.html' %}
+
+
+<div class="container-fluid" style="height:500px;background-color:black;font-size:36px;margin-top: 850px;z-index: 500;">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+{#<div id="jrow" class="row">#}
+{#    <div id="jbackground" class="jumbotron jumbotron-fluid">#}
+{#        <div class="container-fluid">#}
+{#            <div class="row">#}
+{#                <div id="jtext" class="col-md-8">#}
+{#                   <h1>Fluid jumbotron</h1>#}
+{#                    <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.This is a modified jumbotron that occupies the entire horizontal space of its parent.This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>#}
+{#                </div>#}
+{#                <div class="col-md-4">#}
+{##}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+<!-- Carousel  -->
+{#{% include 'carousel.html' %}#}
+<!-- /.carousel -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
+        integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"
+        integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB"
+        crossorigin="anonymous"></script>
+{#    <script src="../../dist/js/bootstrap.min.js"></script>#}
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"
+        integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD"
+        crossorigin="anonymous"></script>
+{#    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->#}
+{#    <script src="../../assets/js/vendor/holder.min.js"></script>#}
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+</body>
+</html>

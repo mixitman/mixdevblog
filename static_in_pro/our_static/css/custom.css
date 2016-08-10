@@ -1,0 +1,51 @@
+body {
+    background-color: #807f7f;
+}
+.btn-danger {
+    background-color: #cc0015;
+    border: hidden;
+}
+.text-align-center {
+    text-align: center;
+}
+
+.navbar-static-top {
+    margin-bottom: 0;
+}
+.navbar-default {
+    background-color: #000000;
+    border-color: #cc0015;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #FFFFFF;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #bebebe;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px #000000 inset !important; /* Change the color to your own background color */
+    -webkit-text-fill-color: #bdbdbd !important;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px #000000 inset !important;
+    -webkit-text-fill-color: #bdbdbd !important;
+}
+#pgform1, #pgform2  {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    border: 1px solid #cc0015;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
