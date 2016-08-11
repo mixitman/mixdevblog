@@ -1,3 +1,4 @@
+@import 'compass/css3';
 @import './variables';
 @mixin default-text-color($tc){
   color: $tc;
@@ -20,15 +21,15 @@
   #{$element} {
     overflow-x: hidden;
     overflow-y: auto;
-    perspective: $perspective * 1px;
-    transform-style: preserve-3d;
+    @include perspective($perspective * 1px);
+    @include transform-style(preserve-3d);
     // Allows for smooth scrolling but disables parallax effects.
     @if $parallax-ios == false {
       -webkit-overflow-scrolling: touch;
     }
     // Preserve 3D
     &, * {
-      transform-style: preserve-3d;
+      @include transform-style(preserve-3d);
     }
   }
 }

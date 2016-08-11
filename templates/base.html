@@ -19,9 +19,8 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Reem+Kufi" rel="stylesheet">
     <!-- Custom styles for this template -->
-
-    <link href="{% static 'css/carousel.css' %}" rel="stylesheet">
     <link href="{% static 'css/custom2.css' %}" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
 </head>
 <body>
 
@@ -29,14 +28,45 @@
 {% include 'navbar.html' %}
 <!-- /.navbar -->
 
-    {% include 'jumbotron.html' %}
+{% include 'jumbotron.html' %}
 
 
-<div class="container-fluid" style="height:500px;background-color:black;font-size:36px;margin-top: 850px;z-index: 500;">
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
+<div class="container-fluid main-container">
+    <div class="row main-start m-x-auto">
+        <div class="col-sm-4">
+            <div class="card text-xs-center m-x-auto">
+                <img class="card-img-top img-responsive" src="{% static 'img/blindspot.jpg' %}" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Blind Spot</h4>
+                    <p class="card-text">Having survived careers in both the Army and the FBI, Ryan Archer is now content to live a quiet life in a tiny apartment above a surf shop in Santa Cruz, California. He has few possessions and few friends. He works part-time in the little shop downstairs, and spends most of his free hours out on the open water with just his board and the waves.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-xs-center m-x-auto">
+                <img class="card-img-top img-responsive" src="{% static 'img/hours.jpg' %}" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">72 Hours</h4>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-xs-center m-x-auto">
+                <img class="card-img-top img-responsive" src="{% static 'img/neverback.jpg' %}" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Never Back Down</h4>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
 {#<div id="jrow" class="row">#}
 {#    <div id="jbackground" class="jumbotron jumbotron-fluid">#}
 {#        <div class="container-fluid">#}
