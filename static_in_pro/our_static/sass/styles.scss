@@ -2,11 +2,14 @@
 @import "compass/css3/filter";
 @import "partials/mixins";
 @import "partials/variables";
+@import "partials/mynormal";
 
+html {
+  font-size: 16px;
+}
 
-/* Live CSS Blur ******************************/
-h1, h2, h3, h4 {
-    font-family: 'Reem Kufi', sans-serif;
+p {
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -14,14 +17,144 @@ body {
   padding: 0;
   height: 100%;
 }
+/* navbar */
+
+.navbar {
+  padding: 1rem;
+  background-color: rgb(0, 0, 0);
+  border-bottom: 2px solid $black;
+  @include box-shadow($black 5px 0 10px);
+  .nav-item a {
+    color: $white;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 1.5em;
+  }
+  .navbar-nav {
+    padding-right: 6rem;
+  }
+  li {
+    margin: 0 3rem 0 0;
+    a {
+      @include single-text-shadow;
+    }
+  }
+  .navbar-brand {
+    color: $white;
+    padding-left: 6rem;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 1.8em;
+    @include single-text-shadow;
+  }
+}
+.sticky.is-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+.sticky-wrapper {
+  margin-top: 46em;
+}
+/* /navbar end */
+
+/* Live CSS Blur ******************************/
+#landing-container {
+  img.bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2001;
+  }
+  .blur {
+    height: 450px;
+    width: 100%;
+    margin: -20px auto;
+    position: relative;
+    z-index: -2000;
+    @include filter(blur(14px));
+    overflow: hidden;
+  }
+
+  .blur:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(87, 87, 77, 0);
+    position: absolute;
+  }
+
+  .widget {
+    border: 2px solid $black;
+    height: 180px;
+    width: 40%;
+    overflow: hidden;
+  }
+  .widget:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border: 1px solid $black;
+  }
+
+  .center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #context {
+    opacity: 1;
+    margin-top: 32rem;                             /*! use this to move the main title around */
+    @include box-shadow($black 0px 0px 15px);
+
+
+    hr {
+      width: 80%;
+      border: 0px;
+      height: 2px;
+      background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0, 0, 0, 0.75),rgba(0,0,0,0));
+    }
+    .text {
+      margin-top: 1.6em;
+      text-align: center;
+      color: $white;
+      @include single-text-shadow;
+      font-family: $pfont;
+      h1 {
+        padding-bottom: 10px;
+        letter-spacing: 1.5em;
+        font-size: 1.4em;
+      }
+      p {
+        padding: 0 0 0 45px;
+        letter-spacing: 1.4em;
+        font-size: 2.8em;
+      }
+    }
+  }
+}
+
 .main-container {
   padding: 0;
 }
 .main-start {
-  background-color: rgb(212, 212, 212);
+  background-color: $white;
+  //background: radial_gradient(45px 45px, cyan 10px, dodgerblue 30px);
+  //background: linear-gradient(rgba(255,0,0,0.15),rgba(255,0,0,0.15)), url('../img/typewriter_1920x1080.jpg') no-repeat center top fixed;
   height: 150rem;
-  margin: 49rem 0 0 0;
-  padding-top: 1.5rem;
+  margin: 0 0 0 0;
+  padding-top: 5em;
   z-index: 1;
 }
 .card {
@@ -35,80 +168,8 @@ body {
 }
 
 
-img.bg {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 3.3rem;
-  left: 0;
-  z-index: -2001;
-}
-
-.blur {
-  height: 450px;
-  width: 100%;
-  margin: -20px auto;
-  position: relative;
-  z-index: -2000;
-  @include filter(blur(14px));
-  overflow: hidden;
-}
-
-.blur:after {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background: rgba(255, 255, 255, .03);
-  position: absolute;
-}
-
-.widget {
-  border: 1px solid white;
-  height: 200px;
-  width: 60%;
-  overflow: hidden;
-}
-
-.center {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-#context {
-  opacity: 1;
-  margin-top: 23rem;
-}
 
 
-/*  NOT REQUIRED  */
 
-//.text {
-//  height: 200px;
-//  width: 340px;
-//}
 
-.text h1 {
-  text-align: center;
-  text-shadow: 1px 1px rgba(0, 0, 0, .91);
-  color: #ffffff;
-  margin-top: 40px;
-  font-weight: 700;
-  font-size: 2.8rem;
-  letter-spacing: 1.9rem;
-}
-
-.text p {
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 1px 1px rgba(0, 0, 0, .1);
-  margin-top: 0px;
-  font-weight: 400;
-  font-size: 22px;
-  padding-top: 12px;
-  letter-spacing: 2.9rem;
-}
 
