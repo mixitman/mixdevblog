@@ -3,7 +3,7 @@ $(document).ready(function() {
     var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
         var stickyHeight = sticky.outerHeight();
         var stickyTop = stickyWrapper.offset().top;
-        if (scrollElement.scrollTop() >= stickyTop){
+         if (scrollElement.scrollTop() >= stickyTop){
             stickyWrapper.height(stickyHeight);
             sticky.addClass("is-sticky");
         }
@@ -30,9 +30,15 @@ $(document).ready(function() {
     });
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
+        var lc = $('.landing-text');
         if (scroll <= 700){
-        $('#context').css('opacity', 1 - scroll / 560)}
+            $(lc).css('opacity', 1 - scroll / 560);
+            $(lc).css('margin-top', 22 + scroll / 55 + 'rem')
+        }
+
     });
+
+
 
 });
 

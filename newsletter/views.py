@@ -30,7 +30,7 @@ def home(request):
     #     if not instance.full_name:
     #         instance.full_name = "Name Blank"
     #     instance.save()
-    #     context = {
+    #     landing-context = {
     #         "title": "Thank You"
     #     }
 

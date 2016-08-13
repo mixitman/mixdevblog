@@ -524,3 +524,90 @@
 {#      ^media\/(?P<path>.*)$                                                                                                     #}
         The current URL, accounts/4465465, didn't match any of these.
 </code>
+/* Live CSS Blur ******************************/
+#landing-container {
+  img.bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    z-index: -2001;
+  }
+
+  .blur {
+    height: 450px;
+    width: 100%;
+    margin: -20px auto;
+    position: relative;
+    z-index: -2000;
+    @include filter(blur(14px));
+    overflow: hidden;
+  }
+
+  .blur:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(87, 87, 77, 0);
+    position: absolute;
+  }
+
+  .widget {
+    border: 2px solid $black;
+    height: 180px;
+    width: 40%;
+    overflow: hidden;
+  }
+  .widget:before {
+    content: "";
+    position: absolute;
+    z-index: -1999;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border: 1px solid $black;
+  }
+
+  .center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #landing-context {
+    opacity: 1;
+    margin-top: 25rem;                             /*! use this to move the main title around */
+    @include box-shadow($black 0px 0px 15px);
+
+
+    hr {
+      width: 80%;
+      border: 0px;
+      height: 2px;
+      background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0, 0, 0, 0.75),rgba(0,0,0,0));
+    }
+    .text {
+      margin-top: 1.6em;
+      text-align: center;
+      color: $white;
+      @include single-text-shadow;
+      font-family: $hfont;
+      h1 {
+        padding-bottom: 10px;
+        letter-spacing: 1.5em;
+        font-size: 1.4em;
+      }
+      p {
+        padding: 0 0 0 45px;
+        letter-spacing: 1.4em;
+        font-size: 2.8em;
+      }
+    }
+  }
+}
