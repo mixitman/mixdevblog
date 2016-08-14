@@ -5,55 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fb33c17-a0e4-463b-bf5d-eb8e5fc094a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/img/artist321.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/img/bird.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/img/blindspot.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/img/flywithme.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/img/greentypewriter.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/img/hours.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/img/img-noise-150x150.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/img/neverback.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/img/seamless_paper_texture.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/img/stranger.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/.sass-cache/32e51d6201236babcd525184c4a0a269849a672b/ie.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/.sass-cache/32e51d6201236babcd525184c4a0a269849a672b/print.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/.sass-cache/32e51d6201236babcd525184c4a0a269849a672b/screen.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/.sass-cache/32e51d6201236babcd525184c4a0a269849a672b/styles.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/.sass-cache/48c693e1964a11ddd53c6eda67284b26e0bbc066/_reset.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/.sass-cache/8aaef7f71833074c34e9a6a54de41c786d8d8f75/_utilities.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/config.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/css/ie.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/css/print.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/css/screen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/js/testing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/sass/ie.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_layout.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_mynormal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_normalize.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/sass/print.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/sass/screen.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_in_pro/our_static/sass/styles.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/landing.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/landing2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/pins.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_in_pro/our_static/css/carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_in_pro/our_static/css/custom.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static_in_pro/our_static/css/custom2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/jumbotron.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/mixSSD.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/mixSSD.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/project002.iml" afterPath="$PROJECT_DIR$/.idea/project002.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newsletter/views.py" afterPath="$PROJECT_DIR$/newsletter/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/backups/home_bkup.html" afterPath="$PROJECT_DIR$/templates/backups/home_bkup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/navbar.html" afterPath="$PROJECT_DIR$/templates/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/notes.html" afterPath="$PROJECT_DIR$/templates/notes.html" />
     </list>
     <ignored path="project002.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -125,8 +77,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -1174,8 +1126,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding />
         </state>
       </provider>
