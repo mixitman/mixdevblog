@@ -90,30 +90,16 @@ body {
   font-family: 'Reem Kufi', sans-serif;
   font-size: 1.5em;
 }
-/* line 37, ../sass/styles.scss */
-.navbar .navbar-nav {
-  padding-right: 6rem;
-}
-/* line 40, ../sass/styles.scss */
-.navbar li {
-  margin: 0 3rem 0 0;
-}
-/* line 42, ../sass/styles.scss */
-.navbar li a {
-  text-shadow: 1px 1px 5px #000000;
-  text-shadow: 1px 1px 5px 1px #000000;
-}
-/* line 46, ../sass/styles.scss */
+/* line 38, ../sass/styles.scss */
 .navbar .navbar-brand {
   color: #ffffff;
-  padding-left: 6rem;
   font-family: 'Reem Kufi', sans-serif;
   font-size: 1.8em;
   text-shadow: 1px 1px 5px #000000;
   text-shadow: 1px 1px 5px 1px #000000;
 }
 
-/* line 54, ../sass/styles.scss */
+/* line 45, ../sass/styles.scss */
 .sticky.is-sticky {
   position: fixed;
   left: 0;
@@ -123,156 +109,89 @@ body {
   width: 100%;
 }
 
-/* line 62, ../sass/styles.scss */
+/* line 53, ../sass/styles.scss */
 .sticky-wrapper {
   margin-top: 0;
 }
 
 /* /navbar end */
 /* landing2 */
-/* line 68, ../sass/styles.scss */
-#landing-container {
-  background: url("../img/greentypewriter.jpg") no-repeat center center fixed;
-  background-size: 100% 100%;
+/* line 60, ../sass/styles.scss */
+.landing-container img {
   width: 100%;
   height: 900px;
-  margin: 0 0 0 0;
-  z-index: -1001;
+  z-index: -5;
 }
-/* line 76, ../sass/styles.scss */
-#landing-container .row {
+/* line 65, ../sass/styles.scss */
+.landing-container .landing-widget {
+  position: absolute;
+  left: 0;
+  top: 400px;
+  width: 100%;
+  height: 240px;
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+/* line 74, ../sass/styles.scss */
+.landing-container .landing-widget:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  right: 0;
+  bottom: 3px;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+/* line 84, ../sass/styles.scss */
+.landing-container .landing-widget:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+  bottom: 8px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+/* line 95, ../sass/styles.scss */
+.landing-container .landing-text {
   text-align: center;
-}
-
-/* line 80, ../sass/styles.scss */
-.landing-text {
+  color: #ffffff;
+  padding: 55px 0;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUxNTE1MSIgc3RvcC1vcGFjaXR5PSIwLjYiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzlhOWE5YSIgc3RvcC1vcGFjaXR5PSIwLjQzIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTE1MTUxIiBzdG9wLW9wYWNpdHk9IjAuNiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(81, 81, 81, 0.6)), color-stop(50%, rgba(154, 154, 154, 0.43)), color-stop(100%, rgba(81, 81, 81, 0.6)));
   background-image: -moz-linear-gradient(rgba(81, 81, 81, 0.6), rgba(154, 154, 154, 0.43), rgba(81, 81, 81, 0.6));
   background-image: -webkit-linear-gradient(rgba(81, 81, 81, 0.6), rgba(154, 154, 154, 0.43), rgba(81, 81, 81, 0.6));
   background-image: linear-gradient(rgba(81, 81, 81, 0.6), rgba(154, 154, 154, 0.43), rgba(81, 81, 81, 0.6));
-  margin-top: 22rem;
-  z-index: -1000;
-  color: #ffffff;
   text-shadow: 1px 1px 5px #000000;
   text-shadow: 1px 1px 5px 1px #000000;
   -moz-box-shadow: #000000 0px 0px 15px;
   -webkit-box-shadow: #000000 0px 0px 15px;
   box-shadow: #000000 0px 0px 15px;
 }
-/* line 88, ../sass/styles.scss */
-.landing-text h1 {
-  font-family: 'Reem Kufi', sans-serif;
+/* line 103, ../sass/styles.scss */
+.landing-container .landing-text h1 {
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 3em;
-  font-weight: 900;
-  letter-spacing: 1.8em;
-  padding-top: .9em;
+  font-weight: bold;
+  letter-spacing: .75em;
 }
-/* line 96, ../sass/styles.scss */
-.landing-text p {
-  font-family: 'Reem Kufi', sans-serif;
-  font-size: 3em;
-  font-weight: 900;
-  letter-spacing: .8em;
+/* line 109, ../sass/styles.scss */
+.landing-container .landing-text p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: bolder;
+  letter-spacing: 1.4em;
 }
-/* line 102, ../sass/styles.scss */
-.landing-text hr {
+/* line 115, ../sass/styles.scss */
+.landing-container .landing-text hr {
   width: 80%;
   border: 0;
   height: 2px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 232, 0.75), rgba(0, 0, 0, 0));
 }
 
-/* line 111, ../sass/styles.scss */
-.landing-widget {
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-  width: 100%;
-  height: 15rem;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-}
-
-/* line 120, ../sass/styles.scss */
-.landing-widget:before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  right: 3px;
-  bottom: 3px;
-  border-top: 2px solid #000000;
-  border-bottom: 2px solid #000000;
-}
-
 /* /landing2 end */
-/* line 135, ../sass/styles.scss */
-.nav-container {
-  padding: 0;
-}
-
 /* pins */
-/* line 140, ../sass/styles.scss */
-#pinmain {
-  background: url("../img/seamless_paper_texture.png");
-  margin-top: 0;
-  padding-top: 0;
-}
-
-/* line 145, ../sass/styles.scss */
-#wrapper {
-  width: 90%;
-  max-width: 1100px;
-  min-width: 800px;
-  padding-top: 3rem;
-  margin: 0 auto;
-}
-
-/* line 153, ../sass/styles.scss */
-#columns {
-  -moz-column-count: 3;
-  -webkit-column-count: 3;
-  column-count: 3;
-  -moz-column-gap: 15px;
-  -webkit-column-gap: 15px;
-  column-gap: 15px;
-  -moz-column-fill: auto;
-  -webkit-column-fill: auto;
-  column-fill: auto;
-}
-
-/* line 160, ../sass/styles.scss */
-.pin {
-  display: inline-block;
-  background: #FEFEFE;
-  border: 2px solid #FAFAFA;
-  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-  margin: 0 2px 15px;
-  -moz-page-break-inside: avoid;
-  -webkit-column-break-inside: avoid;
-  break-inside: avoid;
-  padding: 15px 15px 5px 15px;
-  background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
-  opacity: 1;
-  -moz-transition-property: all, 0.2s, ease;
-  -o-transition-property: all, 0.2s, ease;
-  -webkit-transition-property: all, 0.2s, ease;
-  transition-property: all, 0.2s, ease;
-}
-
-/* line 174, ../sass/styles.scss */
-.pin img {
-  width: 100%;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 15px;
-  margin-bottom: 5px;
-}
-
-/* line 181, ../sass/styles.scss */
-.pin p {
-  font: 12px/18px Arial, sans-serif;
-  color: #333;
-  margin: 0;
-}

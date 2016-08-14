@@ -28,15 +28,15 @@ $(document).ready(function() {
         // On page load
         stickyToggle(sticky, stickyWrapper, $(window));
     });
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        var lc = $('.landing-text');
-        if (scroll <= 700){
-            $(lc).css('opacity', 1 - scroll / 560);
-            $(lc).css('margin-top', 22 + scroll / 55 + 'rem')
-        }
-
-    });
+    // $(window).scroll(function () {
+    //     var scroll = $(window).scrollTop();
+    //     var lc = $('.landing-text');
+    //     if (scroll <= 700){
+    //         $(lc).css('opacity', 1 - scroll / 560);
+    //         $(lc).css('margin-top', 22 + scroll / 55 + 'rem')
+    //     }
+    //
+    // });
 
 
 

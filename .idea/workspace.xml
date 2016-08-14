@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fb33c17-a0e4-463b-bf5d-eb8e5fc094a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/mixSSD.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/mixSSD.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newsletter/views.py" afterPath="$PROJECT_DIR$/newsletter/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_in_pro/our_static/img/greentypewriter.jpg" afterPath="$PROJECT_DIR$/static_in_pro/our_static/img/greentypewriter.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_in_pro/our_static/.sass-cache/32e51d6201236babcd525184c4a0a269849a672b/styles.scssc" afterPath="$PROJECT_DIR$/static_in_pro/our_static/.sass-cache/32e51d6201236babcd525184c4a0a269849a672b/styles.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_in_pro/our_static/css/styles.css" afterPath="$PROJECT_DIR$/static_in_pro/our_static/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_in_pro/our_static/js/main.js" afterPath="$PROJECT_DIR$/static_in_pro/our_static/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_variables.scss" afterPath="$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_variables.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_in_pro/our_static/sass/styles.scss" afterPath="$PROJECT_DIR$/static_in_pro/our_static/sass/styles.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/backups/home_bkup.html" afterPath="$PROJECT_DIR$/templates/backups/home_bkup.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/landing.html" afterPath="$PROJECT_DIR$/templates/landing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/landing2.html" afterPath="$PROJECT_DIR$/templates/landing2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/navbar.html" afterPath="$PROJECT_DIR$/templates/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/notes.html" afterPath="$PROJECT_DIR$/templates/notes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/pins.html" afterPath="$PROJECT_DIR$/templates/pins.html" />
     </list>
     <ignored path="project002.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,18 +46,18 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+            <state relative-caret-position="493">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static_in_pro/our_static/sass/styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="98" column="120" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="120" />
               <folding />
             </state>
           </provider>
@@ -69,8 +66,18 @@
       <file leaf-file-name="landing2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/landing2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static_in_pro/our_static/config.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,7 +96,7 @@
       <file leaf-file-name="notes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/notes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9707">
+            <state relative-caret-position="577">
               <caret line="571" column="3" selection-start-line="571" selection-start-column="3" selection-end-line="571" selection-end-column="3" />
               <folding />
             </state>
@@ -99,18 +106,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static_in_pro/our_static/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_base.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_base.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="38" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -119,8 +116,8 @@
       <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -129,9 +126,11 @@
       <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="170">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <folding>
+                <element signature="e#337#344#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,8 +138,8 @@
       <file leaf-file-name="pins.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/pins.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            <state relative-caret-position="-255">
+              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -190,17 +189,17 @@
         <option value="$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_normalize.scss" />
         <option value="$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_mynormal.scss" />
         <option value="$PROJECT_DIR$/static_in_pro/our_static/js/testing.js" />
-        <option value="$PROJECT_DIR$/static_in_pro/our_static/css/styles.css" />
-        <option value="$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_variables.scss" />
-        <option value="$PROJECT_DIR$/templates/navbar.html" />
         <option value="$PROJECT_DIR$/templates/backups/home_bkup.html" />
-        <option value="$PROJECT_DIR$/templates/pins.html" />
         <option value="$PROJECT_DIR$/templates/landing.html" />
         <option value="$PROJECT_DIR$/templates/notes.html" />
-        <option value="$PROJECT_DIR$/templates/landing2.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/pins.html" />
         <option value="$PROJECT_DIR$/static_in_pro/our_static/js/main.js" />
+        <option value="$PROJECT_DIR$/templates/navbar.html" />
+        <option value="$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_variables.scss" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/static_in_pro/our_static/css/styles.css" />
         <option value="$PROJECT_DIR$/static_in_pro/our_static/sass/styles.scss" />
+        <option value="$PROJECT_DIR$/templates/landing2.html" />
       </list>
     </option>
   </component>
@@ -211,10 +210,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="x" value="-7" />
+    <option name="width" value="1934" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -224,12 +222,12 @@
             <id />
           </State>
           <State>
-            <id>Python</id>
+            <id>Spelling</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>PyCompatibilityInspection</id>
+            <id>SpellCheckingInspection</id>
           </State>
         </selected-state>
       </profile-state>
@@ -419,22 +417,22 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jmdsite/settings.py" />
     <property name="prop_add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\mixSSD\PycharmProjects\project002\templates\backups" />
-      <recent name="C:\Users\mixSSD\PycharmProjects\project002\static_in_pro\our_static\img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mixSSD\PycharmProjects\project002\static_in_pro\our_static\img" />
       <recent name="C:\Users\mixSSD\PycharmProjects\project002\static_in_pro\our_static\sass\partials" />
       <recent name="C:\Users\mixSSD\PycharmProjects\project002\static_in_pro\our_static\css" />
       <recent name="C:\Users\mixSSD\PycharmProjects\project002\templates\backups" />
       <recent name="C:\Users\mixSSD\PycharmProjects\project002\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mixSSD\PycharmProjects\project002\templates\backups" />
+      <recent name="C:\Users\mixSSD\PycharmProjects\project002\static_in_pro\our_static\img" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.project002">
@@ -738,21 +736,28 @@
       <option name="project" value="LOCAL" />
       <updated>1470965969589</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="SCSS Progress">
+      <created>1471098549725</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1471098549725</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
-    <editor active="false" />
+    <frame x="-7" y="0" width="1934" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22014925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22038421" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3129689" sideWeight="0.4978678" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28724545" sideWeight="0.5021322" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2900433" sideWeight="0.5021322" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -805,13 +810,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/registration/activation_email_subject.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="77" selection-start-line="0" selection-start-column="77" selection-end-line="0" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/registration/password_reset_email.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1029,41 +1027,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static_in_pro/our_static/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/backups/home_bkup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="832">
           <caret line="94" column="10" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pins.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/landing2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1075,42 +1042,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/navbar.html">
+    <entry file="file://$PROJECT_DIR$/templates/notes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+        <state relative-caret-position="577">
+          <caret line="571" column="3" selection-start-line="571" selection-start-column="3" selection-end-line="571" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static_in_pro/our_static/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+        <state relative-caret-position="357">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="38" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/notes.html">
+    <entry file="file://$PROJECT_DIR$/templates/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9707">
-          <caret line="571" column="3" selection-start-line="571" selection-start-column="3" selection-end-line="571" selection-end-column="3" />
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="e#337#344#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pins.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_in_pro/our_static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3094">
+          <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+          <folding>
+            <marker date="1471121216880" expanded="true" signature="866:910" ph="{...}" />
+            <marker date="1471121216880" expanded="true" signature="1087:1155" ph="{...}" />
+            <marker date="1471121216880" expanded="true" signature="1213:1411" ph="{...}" />
+            <marker date="1471121216880" expanded="true" signature="1467:1548" ph="{...}" />
+            <marker date="1471121216880" expanded="true" signature="1606:1763" ph="{...}" />
+            <marker date="1471121216880" expanded="true" signature="1818:1905" ph="{...}" />
+            <marker date="1471121216880" expanded="true" signature="1958:1978" ph="{...}" />
+            <marker date="1471121216880" expanded="true" signature="2071:2121" ph="{...}" />
+            <marker date="1471121216880" expanded="true" signature="2192:2300" ph="{...}" />
+            <marker date="1471121216880" expanded="true" signature="2812:2816" ph="{...}" />
+            <marker date="1471121216880" expanded="true" signature="2885:4387" ph="{...}" />
+            <marker date="1471121216880" expanded="true" signature="2970:3630" ph="data:image/svg+xml" />
+            <marker date="1471121216880" expanded="true" signature="4460:4570" ph="{...}" />
+            <marker date="1471121216880" expanded="true" signature="4642:4756" ph="{...}" />
+            <marker date="1471121216880" expanded="true" signature="4829:4984" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_in_pro/our_static/sass/partials/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static_in_pro/our_static/sass/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="98" column="120" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="120" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/landing2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_in_pro/our_static/config.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
