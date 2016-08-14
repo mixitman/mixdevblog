@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1, shrink-to-fit=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -17,26 +17,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
           integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Reem+Kufi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Reem+Kufi|Poiret+One|Josefin+Sans" rel="stylesheet">
     <!-- Custom styles for this template -->
-
-    <link href="{% static 'css/carousel.css' %}" rel="stylesheet">
-    <link href="{% static 'css/custom2.css' %}" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
 </head>
 <body>
 
-<!-- navbar -->
+
+{% include 'landing2.html' %}
+
+
+
 {% include 'navbar.html' %}
-<!-- /.navbar -->
-
-    {% include 'jumbotron.html' %}
 
 
-<div class="container-fluid" style="height:500px;background-color:black;font-size:36px;margin-top: 850px;z-index: 500;">
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
-</div>
+{#<div id="pinmain">#}
+{##}
+{##}
+{#    {% include 'pins.html' %}#}
+{##}
+{#</div>#}
+
 {#<div id="jrow" class="row">#}
 {#    <div id="jbackground" class="jumbotron jumbotron-fluid">#}
 {#        <div class="container-fluid">#}
@@ -75,5 +76,7 @@ Tip: Try to remove the background-attachment property to remove the scrolling ef
 {#    <script src="../../assets/js/vendor/holder.min.js"></script>#}
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
 </body>
 </html>

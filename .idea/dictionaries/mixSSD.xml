@@ -1,6 +1,7 @@
 <component name="ProjectDictionaryState">
   <dictionary name="mixSSD">
     <words>
+      <w>blindspot</w>
       <w>blockquote</w>
       <w>blocktrans</w>
       <w>bootstrapcdn</w>
@@ -14,8 +15,10 @@
       <w>endblocktrans</w>
       <w>featurette</w>
       <w>featurettes</w>
+      <w>flywithme</w>
       <w>glyphicon</w>
       <w>gmail</w>
+      <w>greentypewriter</w>
       <w>jbackground</w>
       <w>jmdsite</w>
       <w>jrow</w>
@@ -26,8 +29,14 @@
       <w>littlevader</w>
       <w>lookbacks</w>
       <w>maxcdn</w>
+      <w>mixins</w>
       <w>moreton</w>
+      <w>neverback</w>
+      <w>onscroll</w>
+      <w>pfont</w>
       <w>pgform</w>
+      <w>pinmain</w>
+      <w>positioninitial</w>
       <w>protip</w>
       <w>redux</w>
       <w>smtp</w>
@@ -35,6 +44,7 @@
       <w>sortremove</w>
       <w>startapp</w>
       <w>staticfile</w>
+      <w>textblur</w>
       <w>toggler</w>
       <w>unsplash</w>
       <w>venv</w>
