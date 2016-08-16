@@ -8,13 +8,9 @@ $landing-border-color: #ffffff;
 $hfont: 'Reem Kufi', sans-serif;
 $pfont:  'Montserrat', sans-serif;
 
-$default-text-shadow-color: $black;
-$default-text-shadow-h-offset: 1px;
-$default-text-shadow-v-offset: 1px;
-$default-text-shadow-blur: 5px;
-$default-text-shadow-spread: 1px;
+$large: 960px;
+$medium: 580px;
+$small: 300px;
 
-$parallax-perspective : 1 !default;
-$parallax-element     : ".landing-container" !default;
-$parallax-ios         : true !default;
+
 

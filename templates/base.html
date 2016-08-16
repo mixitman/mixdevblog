@@ -10,12 +10,12 @@
     <meta name="author" content="">
     <link rel="icon" href="{% static 'img/ico/favicon.ico' %}">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>Monica Downing Designs</title>
 
     <!-- Bootstrap core CSS -->
     {#    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">#}
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
-          integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    {#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"#}
+    {#          integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">#}
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Reem+Kufi|Poiret+One|Josefin+Sans" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -24,11 +24,20 @@
 <body>
 
 
-{% include 'landing2.html' %}
+
+<div class="landing-wrap"><img src="{% static 'img/greentypewriter.jpg' %}">
+    <div class="landing-widget">
+        <h2>Monica Downing</h2>
+        <hr>
+        <h3>DESIGNS</h3>
+    </div>
+</div>
 
 
 
-{% include 'navbar.html' %}
+
+{#{% include 'navbar.html' %}#}
+
 
 
 {#<div id="pinmain">#}
