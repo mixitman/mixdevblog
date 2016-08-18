@@ -10,33 +10,62 @@
     <meta name="author" content="">
     <link rel="icon" href="{% static 'img/ico/favicon.ico' %}">
 
-    <title>Monica Downing Designs</title>
+    <title>a work in progress..</title>
 
     <!-- Bootstrap core CSS -->
     {#    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">#}
-    {#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"#}
-    {#          integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">#}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
+              integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Reem+Kufi|Poiret+One|Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Reem+Kufi|Source+Code+Pro" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst"></script>
     <!-- Custom styles for this template -->
     <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+
 </head>
 <body>
 
 
+<header class="site-header">
 
-<div class="landing-wrap"><img src="{% static 'img/greentypewriter.jpg' %}">
-    <div class="landing-widget">
-        <h2>Monica Downing</h2>
-        <hr>
-        <h3>DESIGNS</h3>
+    <div class="wrap">
+        <div class="landing-wrap">
+            <div class="landing-widget">
+<pre class="prettyprint lang-py">
+    def firstSite():
+        siteTitle = 'a work in progress..'
+        myName = 'Jon Downing'
+
+    # TODO : get the blog up!
+</pre>
+            </div>
+        </div>
     </div>
-</div>
+
+    <div class="nav-wrap" data-toggle="sticky-onscroll">
+        <div class="logo"><a href="/"><span id="pyorange">return</span> render(<span id="pygreen">'home.html'</span>)</a></div>
+        <nav>
+            <ul>
+                <li class="navitem nolink">links = [</li>
+                <li class="navitem"><a href="/">'Blog'</a>,</li>
+                <li class="navitem"><a href="/">'Site Info'</a>,</li>
+                <li class="navitem"><a href="/">'Contact'</a></li>
+                <li class="navitem nolink">]</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="filler-wrap">
+
+    </div>
 
 
 
 
-{#{% include 'navbar.html' %}#}
+
+</header>
+
+
+
 
 
 
@@ -47,24 +76,7 @@
 {##}
 {#</div>#}
 
-{#<div id="jrow" class="row">#}
-{#    <div id="jbackground" class="jumbotron jumbotron-fluid">#}
-{#        <div class="container-fluid">#}
-{#            <div class="row">#}
-{#                <div id="jtext" class="col-md-8">#}
-{#                   <h1>Fluid jumbotron</h1>#}
-{#                    <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.This is a modified jumbotron that occupies the entire horizontal space of its parent.This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>#}
-{#                </div>#}
-{#                <div class="col-md-4">#}
-{##}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{#    </div>#}
-{#</div>#}
-<!-- Carousel  -->
-{#{% include 'carousel.html' %}#}
-<!-- /.carousel -->
+
 
 
 <!-- Bootstrap core JavaScript
@@ -86,6 +98,5 @@
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
 <script src="{% static 'js/main.js' %}"></script>
-
 </body>
 </html>

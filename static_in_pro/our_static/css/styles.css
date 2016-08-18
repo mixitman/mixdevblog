@@ -1,117 +1,201 @@
-/* line 34, ../sass/partials/_layout.scss */
+/* line 31, ../sass/partials/_layout.scss */
 img {
   width: 100%;
   height: auto;
 }
 
-/* line 8, ../sass/styles.scss */
+/* line 21, ../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/styles.scss */
 html {
   font-size: 16px;
   font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
 }
 
-/* line 13, ../sass/styles.scss */
+/* line 15, ../sass/styles.scss */
 body {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   margin: 0;
   padding: 0;
   height: 100%;
   overflow-x: hidden;
+  background: black;
+}
+
+/* line 22, ../sass/styles.scss */
+#pygreen {
+  color: #65b042;
+}
+
+/* line 25, ../sass/styles.scss */
+#pyorange {
+  color: #e28964;
+}
+
+/* line 28, ../sass/styles.scss */
+.site-header {
+  min-height: 4000px;
+}
+/* line 30, ../sass/styles.scss */
+.site-header a {
+  text-decoration: none;
+}
+
+/* line 34, ../sass/styles.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 38, ../sass/styles.scss */
+li {
+  list-style: none;
+}
+
+/* line 41, ../sass/styles.scss */
+.wrap {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255, 255, 255, 0.81);
+  background: black;
 }
 /* line 12, ../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
-body:after {
+.wrap:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 22, ../sass/styles.scss */
-.landing-wrap {
-  color: #ffffff;
-  font-family: "Reem Kufi", sans-serif;
-  text-shadow: 2px 2px 2px #000000;
-  text-shadow: 2px 2px 2px 3px #000000;
+/* line 46, ../sass/styles.scss */
+.filler-wrap {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  min-height: 2000px;
+  background-color: #00b3ee;
 }
 /* line 12, ../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
-.landing-wrap:after {
+.filler-wrap:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 27, ../sass/styles.scss */
-.landing-wrap h2, .landing-wrap h3 {
-  margin: 1.16822%;
-}
-/* line 30, ../sass/styles.scss */
-.landing-wrap h2 {
-  font-size: 3em;
-  letter-spacing: 1.5em;
-}
-/* line 34, ../sass/styles.scss */
-.landing-wrap h3 {
-  font-size: 2em;
-  letter-spacing: .8em;
-}
-/* line 38, ../sass/styles.scss */
-.landing-wrap img {
-  max-height: 900px;
-}
-/* line 41, ../sass/styles.scss */
-.landing-wrap .landing-widget {
-  position: absolute;
-  margin-top: -25%;
-  height: 25%;
+
+/* line 52, ../sass/styles.scss */
+.landing-wrap {
   width: 100%;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUxNTE1MSIgc3RvcC1vcGFjaXR5PSIwLjYiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzlhOWE5YSIgc3RvcC1vcGFjaXR5PSIwLjQzIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTE1MTUxIiBzdG9wLW9wYWNpdHk9IjAuNiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(81, 81, 81, 0.6)), color-stop(50%, rgba(154, 154, 154, 0.43)), color-stop(100%, rgba(81, 81, 81, 0.6)));
-  background-image: -moz-linear-gradient(rgba(81, 81, 81, 0.6), rgba(154, 154, 154, 0.43), rgba(81, 81, 81, 0.6));
-  background-image: -webkit-linear-gradient(rgba(81, 81, 81, 0.6), rgba(154, 154, 154, 0.43), rgba(81, 81, 81, 0.6));
-  background-image: linear-gradient(rgba(81, 81, 81, 0.6), rgba(154, 154, 154, 0.43), rgba(81, 81, 81, 0.6));
-  -moz-box-shadow: #000000 0px 0px 15px;
-  -webkit-box-shadow: #000000 0px 0px 15px;
-  box-shadow: #000000 0px 0px 15px;
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
-  text-align: center;
-  display: table;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  *zoom: 1;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjM2MHB4IiBjeT0iMzYwcHgiIHI9IjYwMCUiPjxzdG9wIG9mZnNldD0iMS42NjY2NjY2NyUiIHN0b3AtY29sb3I9IiM5NDk0OTQiIHN0b3Atb3BhY2l0eT0iMC4zMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjgiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url("../img/library.jpg") no-repeat center fixed;
+  background: -moz-radial-gradient(360px 360px, rgba(148, 148, 148, 0.31) 10px, rgba(0, 0, 0, 0.8) 600px), url("../img/library.jpg") no-repeat center fixed;
+  background: -webkit-radial-gradient(360px 360px, rgba(148, 148, 148, 0.31) 10px, rgba(0, 0, 0, 0.8) 600px), url("../img/library.jpg") no-repeat center fixed;
+  background: radial-gradient(360px 360px, rgba(148, 148, 148, 0.31) 10px, rgba(0, 0, 0, 0.8) 600px), url("../img/library.jpg") no-repeat center fixed;
+  background-position-y: 1%;
+  min-height: 900px;
+  z-index: -5;
 }
-/* line 53, ../sass/styles.scss */
-.landing-wrap .landing-widget h2 h3 {
-  display: table-cell;
-  vertical-align: middle;
+/* line 59, ../sass/styles.scss */
+.landing-wrap pre {
+  border-radius: 1rem;
+  border: 1px solid #9d9d9d;
+  color: rgba(255, 255, 255, 0.81);
+  background-color: rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 0 30px black;
+  -webkit-box-shadow: 0 0 30px black;
+  box-shadow: 0 0 30px black;
 }
-/* line 57, ../sass/styles.scss */
-.landing-wrap .landing-widget hr {
-  width: 80%;
-  border: 0;
-  height: 2px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 232, 0.75), rgba(0, 0, 0, 0));
+/* line 66, ../sass/styles.scss */
+.landing-wrap .landing-widget {
+  margin-top: 15.88785047%;
+  margin-left: 24.29906542%;
+  width: 45%;
+  font-size: 2em;
 }
-/* line 64, ../sass/styles.scss */
-.landing-wrap .landing-widget:before {
-  content: "";
-  position: absolute;
-  top: 3px;
+
+/* line 73, ../sass/styles.scss */
+.sticky.is-sticky {
+  position: fixed;
   left: 0;
   right: 0;
-  bottom: 3px;
-  border-top: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
-/* line 74, ../sass/styles.scss */
-.landing-wrap .landing-widget:after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 0;
-  right: 0;
-  bottom: 8px;
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+
+/* line 81, ../sass/styles.scss */
+.sticky-wrapper {
+  margin-top: 0;
 }
+
+/* navbar */
+/* line 85, ../sass/styles.scss */
+.nav-wrap {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3rem;
+  background: black;
+  padding: .25rem 3rem;
+  font-family: monospace;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  border-top: 1px solid #5f6267;
+  border-bottom: 1px solid #5f6267;
+}
+/* line 12, ../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.nav-wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 96, ../sass/styles.scss */
+.navitem {
+  color: rgba(255, 255, 255, 0.81);
+  padding-left: 0;
+}
+
+/* line 100, ../sass/styles.scss */
+.navitem a {
+  color: #65b042;
+}
+/* line 102, ../sass/styles.scss */
+.navitem a:hover {
+  color: #bce0ab;
+}
+
+/* line 106, ../sass/styles.scss */
+.nolink {
+  color: rgba(255, 255, 255, 0.81);
+}
+/* line 108, ../sass/styles.scss */
+.nolink:hover {
+  color: rgba(255, 255, 255, 0.81);
+}
+
+/* line 112, ../sass/styles.scss */
+.logo a {
+  float: left;
+  color: rgba(255, 255, 255, 0.81);
+}
+
+/* line 116, ../sass/styles.scss */
+nav {
+  float: right;
+}
+/* line 119, ../sass/styles.scss */
+nav li {
+  list-style: none;
+  float: left;
+  margin-left: 2em;
+}
+
+/* /navbar end */

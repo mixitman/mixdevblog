@@ -6,6 +6,7 @@
       <w>blocktrans</w>
       <w>bootstrapcdn</w>
       <w>clearfix</w>
+      <w>codenav</w>
       <w>collectstatic</w>
       <w>createsueruser</w>
       <w>deadpool</w>
@@ -27,18 +28,24 @@
       <w>jtitle</w>
       <w>jumbomovie</w>
       <w>jumbotron</w>
+      <w>linenums</w>
       <w>littlevader</w>
       <w>lookbacks</w>
       <w>maxcdn</w>
       <w>mixins</w>
       <w>moreton</w>
       <w>neverback</w>
+      <w>nocode</w>
+      <w>nolink</w>
       <w>onscroll</w>
       <w>pfont</w>
       <w>pgform</w>
       <w>pinmain</w>
       <w>positioninitial</w>
+      <w>prettyprint</w>
       <w>protip</w>
+      <w>pygreen</w>
+      <w>pyorange</w>
       <w>redux</w>
       <w>smtp</w>
       <w>sortoptions</w>
