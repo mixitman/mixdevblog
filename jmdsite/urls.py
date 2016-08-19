@@ -21,20 +21,19 @@ from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.contrib import admin
 
-from newsletter.views import home, contact
-from views import about
+from .views import home
 
 
 urlpatterns = [
     url(r'^$', home, name="home"),
-    url(r'^about/$', about, name="about"),
-    url(r'^contact/$', contact, name="contact"),
+    url(r'^blog/', include('blog.urls', namespace='blog')),
+
     # url(r'^posts/', include("posts.urls", namespace='posts')),
 
 
     # base admin url -
     url(r'^admin/', admin.site.urls),
-    url(r'^accounts/', include('registration.backends.default.urls')),
+
 ]
 
 if settings.DEBUG:

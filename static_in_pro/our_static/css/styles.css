@@ -23,7 +23,7 @@ body {
   padding: 0;
   height: 100%;
   overflow-x: hidden;
-  background: transparent;
+  background: black;
 }
 
 /* line 22, ../sass/styles.scss */
@@ -62,7 +62,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   color: rgba(255, 255, 255, 0.81);
-  background: transparent;
+  background: black;
 }
 /* line 12, ../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .wrap:after {
@@ -99,7 +99,6 @@ li {
   background: radial-gradient(360px 360px, rgba(148, 148, 148, 0.31) 10px, rgba(0, 0, 0, 0.8) 600px), url("../img/library.jpg") no-repeat center fixed;
   background-position-y: 1%;
   min-height: 900px;
-  z-index: -5;
 }
 /* line 58, ../sass/styles.scss */
 .landing-wrap pre {
@@ -107,9 +106,9 @@ li {
   border: 1px solid #9d9d9d;
   color: rgba(255, 255, 255, 0.81);
   background-color: rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0 0 30px transparent;
-  -webkit-box-shadow: 0 0 30px transparent;
-  box-shadow: 0 0 30px transparent;
+  -moz-box-shadow: 0 0 30px black;
+  -webkit-box-shadow: 0 0 30px black;
+  box-shadow: 0 0 30px black;
 }
 /* line 65, ../sass/styles.scss */
 .landing-wrap .landing-widget {
@@ -141,7 +140,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   height: 3rem;
-  background: transparent;
+  background: black;
   padding: .25rem 3rem;
   font-family: monospace;
   line-height: 2rem;
