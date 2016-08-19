@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'a0p0b_w$7l1u-%r5da*a4!miv2#qh2lbqebd+kcd0-jo2od24s'
+
 
 SITE_ID = 1
 
@@ -29,11 +29,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'deadpoolheartswolverine@gmail.com'
-EMAIL_HOST_PASSWORD = '******'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
 
 '''
 If using gmail, you will need to unlock Captcha to
@@ -54,6 +49,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'registration',
     # my apps
+    'blog',
     'newsletter',
 ]
 
@@ -151,3 +147,8 @@ ACCOUNT_ACTIVATION_DAYS = 7
 REGISTRATION_AUTO_LOGIN = True
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 LOGIN_REDIRECT_URL = '/'
+
+try:
+    from jmdsite.local_settings import *
+except ImportError:
+    pass

@@ -5,6 +5,5 @@ db.sqlite3
 /static
 .DS_Store
 .idea
-.idea/workspace.xml
-workspace.xml
 /static_in_pro/our_static/.sass-cache
+local_settings.py
