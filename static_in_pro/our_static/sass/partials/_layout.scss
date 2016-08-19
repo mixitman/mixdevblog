@@ -11,10 +11,10 @@ $susy: (
         gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
         global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
         debug: (
-                image: hide,
+                image: show,
                 color: rgba(#66f, .25),
-                output: background, // background | overlay
-                toggle: top right,
+                output: overlay, // background | overlay
+                toggle: bottom left,
         ),
         use-custom: (
                 background-image: true, // look for background-image mixin

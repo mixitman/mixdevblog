@@ -1,4 +1,10 @@
 {% extends "base.html" %}
+
+{% block navigation %}
+
+{% endblock %}
+
+
 {% block landing %}
     <div class="wrap">
         <div class="landing-wrap">
@@ -15,18 +21,5 @@
     </div>
 {% endblock %}
 
-{% block navigation %}
-    <div class="nav-wrap" data-toggle="sticky-onscroll">
-        <div class="logo"><a href="/"><span id="pyorange">return</span> render(<span id="pygreen">'home.html'</span>)</a></div>
-        <nav>
-            <ul>
-                <li class="navitem nolink">links = [</li>
-                <li class="navitem"><a href="/">'Blog'</a>,</li>
-                <li class="navitem"><a href="/">'Site Info'</a>,</li>
-                <li class="navitem"><a href="/">'Contact'</a></li>
-                <li class="navitem nolink">]</li>
-            </ul>
-        </nav>
-    </div>
-{% endblock %}
+
 

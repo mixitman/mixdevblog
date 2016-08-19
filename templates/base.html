@@ -27,35 +27,18 @@
 
 
 <header class="site-header">
-
+{% include 'navbar.html' %}
 {% block landing %}
 {% endblock %}
-
-{% block navigation %}
-{% endblock %}
-
-<div class="filler-wrap">
-{% block blog %}
-{% endblock %}
-</div>
-
-
 </header>
 
 
-
-
-
-
-{#<div id="pinmain">#}
-{##}
-{##}
-{#    {% include 'pins.html' %}#}
-{##}
-{#</div>#}
-
-
-
+<div class="wrap">
+    <div class="blog-pre-wrap">
+        {% block blog %}
+        {% endblock %}
+    </div>
+</div>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->

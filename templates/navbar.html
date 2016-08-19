@@ -1,47 +1,15 @@
 {% load staticfiles %}
 
-
-
-{#<nav class="navbar" id="sticky-onscroll">#}
-{##}
-{#    <!-- Brand -->#}
-{#    <div class="navbar-header">#}
-{#        <a class="navbar-brand" href="/">M.A. Downing</a>#}
-{#    </div>#}
-{#    <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">#}
-{#        &#9776;#}
-{#    </button>#}
-{#    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">#}
-{#        <!-- Links -->#}
-{#        <ul class="nav navbar-nav pull-xs-right">#}
-{#            <li class="nav-item active">#}
-{#                <a class="nav-link" href="#">Monica's Blog <span class="sr-only">(current)</span></a>#}
-{#            </li>#}
-{#            <li class="nav-item">#}
-{#                <a class="nav-link" href="#">Facebook</a>#}
-{#            </li>#}
-{#            <li class="nav-item">#}
-{#                <a class="nav-link" href="#">Contact Monica</a>#}
-{#            </li>#}
-{#        </ul>#}
-{#</nav>#}
-
-{#<nav class="navbar" data-toggle="sticky-onscroll">#}
-{##}
-{#    <!-- Brand -->#}
-{#    <a class="navbar-brand" href="/">M.A. Downing</a>#}
-{##}
-{#    <!-- Links -->#}
-{#    <ul class="nav navbar-nav pull-xs-right">#}
-{#        <li class="nav-item">#}
-{#            <a class="nav-link" href="#">Monica's Blog</a>#}
-{#        </li>#}
-{#        <li class="nav-item">#}
-{#            <a class="nav-link" href="#">Facebook</a>#}
-{#        </li>#}
-{#        <li class="nav-item">#}
-{#            <a class="nav-link" href="#">Contact Monica</a>#}
-{#        </li>#}
-{#    </ul>#}
-{#</nav>#}
+    <div class="nav-wrap" data-toggle="sticky-onscroll">
+        <div class="logo"><a href="/"><span id="pyorange">return</span> render(<span id="pygreen">'home.html'</span>)</a></div>
+        <nav>
+            <ul>
+                <li class="navitem nolink">links = [</li>
+                <li class="navitem"><a href="/blog">'Blog'</a>,</li>
+                <li class="navitem"><a href="/">'Site Info'</a>,</li>
+                <li class="navitem"><a href="/">'Contact'</a></li>
+                <li class="navitem nolink">]</li>
+            </ul>
+        </nav>
+    </div>
 

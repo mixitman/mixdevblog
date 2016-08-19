@@ -1,13 +1,18 @@
-{% extends 'home.html' %}
-
+{% extends 'base.html' %}
 {% block blog %}
-<h1 class="showme" style="color: #ffffff">Hi there</h1>
+
+
+
     {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+
+        <div class="blog-posts">
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+
     {% endfor %}
 
 {% endblock %}
+
+

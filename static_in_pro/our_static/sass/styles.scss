@@ -26,7 +26,6 @@ body {
   color: $pyOrange;
 }
 .site-header {
-  min-height: 4000px;
   a {
     text-decoration: none;
   }
@@ -40,57 +39,47 @@ li {
 }
 .wrap {
   @include container;
-  color: $white;
-  background: $black;
+  background: #ffffff;
 }
-.filler-wrap {
-  @include container;
-  min-height: 200px;
-}
-
+/*  landing                             */
 .landing-wrap {
   @include span(12);
   @include clearfix;
   @include background((radial_gradient(360px 360px, rgba(148, 148, 148, 0.31) 10px, rgba(0, 0, 0, 0.8) 600px)), url('../img/library.jpg') no-repeat center fixed);
-  background-position-y: 1%;
-  min-height: 900px;
+  background-position-y: 40%;
+  min-height: 600px;
 
   pre {
-    border-radius: 1rem;
+    @include span(isolate 6 of 10 at 3);
+    border-radius: 16px;
     border: 1px solid #9d9d9d;
     color: $white;
     background-color: rgba(0, 0, 0, 0.70);
     @include box-shadow(0 0 30px $black);
-  }
-  .landing-widget {
-    margin-top: span(2);
-    margin-left: span(3);
-    width: 45%;
     font-size: 2em;
   }
+  .landing-widget {
+    margin-top: span(1);
+  }
 }
-.sticky.is-sticky {
+/*           end landing                */
+/*              navbar                  */
+.nav-wrap {
+  @include container;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 1000;
   width: 100%;
-}
-.sticky-wrapper {
-  margin-top: 0;
-}
-/* navbar */
-.nav-wrap {
-  @include container;
-  height: 3rem;
+  height: 50px;
   background: $black;
-  padding: .25rem 3rem;
+  padding: 8px 20px;
   font-family: monospace;
   line-height: 2rem;
   font-size: 1.2rem;
-  border-top: 1px solid #5f6267;
   border-bottom: 1px solid #5f6267;
+
 }
 .navitem {
   color: $white;
@@ -118,11 +107,24 @@ nav {
   li  {
     list-style: none;
     float: left;
-    margin-left: 2em;
+    margin-left: 20px;
 
   }
 }
+/*                /navbar end              */
 
+/*                blog                     */
+.blog-pre-wrap {
+  @include span(isolate 6 of 12 at 4);
+  min-height: 1200px;
+  margin-top: 80px;
+  background: #ffffff;
 
-/* /navbar end */
-
+}
+.blog-posts {
+  background: #bababa;
+  margin: 60px 0;
+  padding: 10px;
+  @include box-shadow(2px 2px 20px #000000);
+}
+/*            end blog                     */
