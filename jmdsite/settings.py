@@ -55,7 +55,6 @@ INSTALLED_APPS = [
     'registration',
     # my apps
     'newsletter',
-    'posts',
 ]
 
 MIDDLEWARE = [

@@ -20,8 +20,8 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.contrib import admin
+
 from newsletter.views import home, contact
-# from posts.views import post_home
 from views import about
 
 
@@ -29,7 +29,7 @@ urlpatterns = [
     url(r'^$', home, name="home"),
     url(r'^about/$', about, name="about"),
     url(r'^contact/$', contact, name="contact"),
-    url(r'^posts/', include("posts.urls", namespace='posts')),
+    # url(r'^posts/', include("posts.urls", namespace='posts')),
 
 
     # base admin url -
