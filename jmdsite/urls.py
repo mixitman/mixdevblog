@@ -29,7 +29,7 @@ urlpatterns = [
     url(r'^$', home, name="home"),
     url(r'^about/$', about, name="about"),
     url(r'^contact/$', contact, name="contact"),
-    url(r'^posts/', include("posts.urls")),
+    url(r'^posts/', include("posts.urls", namespace='posts')),
 
 
     # base admin url -

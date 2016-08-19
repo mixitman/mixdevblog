@@ -21,6 +21,17 @@
 
     configure main urls.py
 
+    name / namespace notes:
+    in root urls.py>   url(r'^posts/', include("posts.urls", namespace='posts')),
+        namespace= is used for a target (posts.urls) with multiple urls (posts.detail, posts.list, etc)
+    now in models.py>
+            def get_absolute_url(self):
+                return reverse("posts:detail", kwargs={"pk": self.pk}) <- use namespace:name to concatenate the actual url together
+    posts.urls.py>
+        url(r'^(?P<pk>\d+)/$', post_detail, name="detail"),
+
+    django messages - https://docs.djangoproject.com/en/1.10/ref/contrib/messages/
+
 
 
 

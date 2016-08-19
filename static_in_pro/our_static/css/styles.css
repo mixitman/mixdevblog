@@ -23,7 +23,7 @@ body {
   padding: 0;
   height: 100%;
   overflow-x: hidden;
-  background: black;
+  background: transparent;
 }
 
 /* line 22, ../sass/styles.scss */
@@ -62,7 +62,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   color: rgba(255, 255, 255, 0.81);
-  background: black;
+  background: transparent;
 }
 /* line 12, ../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .wrap:after {
@@ -76,8 +76,7 @@ li {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  min-height: 2000px;
-  background-color: #00b3ee;
+  min-height: 200px;
 }
 /* line 12, ../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .filler-wrap:after {
@@ -86,7 +85,7 @@ li {
   clear: both;
 }
 
-/* line 52, ../sass/styles.scss */
+/* line 51, ../sass/styles.scss */
 .landing-wrap {
   width: 100%;
   float: left;
@@ -102,17 +101,17 @@ li {
   min-height: 900px;
   z-index: -5;
 }
-/* line 59, ../sass/styles.scss */
+/* line 58, ../sass/styles.scss */
 .landing-wrap pre {
   border-radius: 1rem;
   border: 1px solid #9d9d9d;
   color: rgba(255, 255, 255, 0.81);
   background-color: rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0 0 30px black;
-  -webkit-box-shadow: 0 0 30px black;
-  box-shadow: 0 0 30px black;
+  -moz-box-shadow: 0 0 30px transparent;
+  -webkit-box-shadow: 0 0 30px transparent;
+  box-shadow: 0 0 30px transparent;
 }
-/* line 66, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 .landing-wrap .landing-widget {
   margin-top: 15.88785047%;
   margin-left: 24.29906542%;
@@ -120,7 +119,7 @@ li {
   font-size: 2em;
 }
 
-/* line 73, ../sass/styles.scss */
+/* line 72, ../sass/styles.scss */
 .sticky.is-sticky {
   position: fixed;
   left: 0;
@@ -130,19 +129,19 @@ li {
   width: 100%;
 }
 
-/* line 81, ../sass/styles.scss */
+/* line 80, ../sass/styles.scss */
 .sticky-wrapper {
   margin-top: 0;
 }
 
 /* navbar */
-/* line 85, ../sass/styles.scss */
+/* line 84, ../sass/styles.scss */
 .nav-wrap {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   height: 3rem;
-  background: black;
+  background: transparent;
   padding: .25rem 3rem;
   font-family: monospace;
   line-height: 2rem;
@@ -157,41 +156,41 @@ li {
   clear: both;
 }
 
-/* line 96, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
 .navitem {
   color: rgba(255, 255, 255, 0.81);
   padding-left: 0;
 }
 
-/* line 100, ../sass/styles.scss */
+/* line 99, ../sass/styles.scss */
 .navitem a {
   color: #65b042;
 }
-/* line 102, ../sass/styles.scss */
+/* line 101, ../sass/styles.scss */
 .navitem a:hover {
   color: #bce0ab;
 }
 
-/* line 106, ../sass/styles.scss */
+/* line 105, ../sass/styles.scss */
 .nolink {
   color: rgba(255, 255, 255, 0.81);
 }
-/* line 108, ../sass/styles.scss */
+/* line 107, ../sass/styles.scss */
 .nolink:hover {
   color: rgba(255, 255, 255, 0.81);
 }
 
-/* line 112, ../sass/styles.scss */
+/* line 111, ../sass/styles.scss */
 .logo a {
   float: left;
   color: rgba(255, 255, 255, 0.81);
 }
 
-/* line 116, ../sass/styles.scss */
+/* line 115, ../sass/styles.scss */
 nav {
   float: right;
 }
-/* line 119, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
 nav li {
   list-style: none;
   float: left;

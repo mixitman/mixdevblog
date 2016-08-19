@@ -45,8 +45,7 @@ li {
 }
 .filler-wrap {
   @include container;
-  min-height: 2000px;
-  background-color: #00b3ee;
+  min-height: 200px;
 }
 
 .landing-wrap {

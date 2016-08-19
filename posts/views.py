@@ -1,18 +1,25 @@
+from django.contrib import messages
 from django.shortcuts import render, get_object_or_404
-
-# Create your views here.
+from django.http import HttpResponseRedirect
+from .forms import PostForm
 from .models import Post
 
 
 def post_create(request):
+    form = PostForm(request.POST or None)
+    if form.is_valid():
+        instance = form.save(commit=False)
+        instance.save()
+        messages.success(request, "Created new post")
+        return HttpResponseRedirect(instance.get_absolute_url())
     context = {
-        "title": "Create"
+        "form": form,
     }
-    return render(request, "blog_list.html", context)
+    return render(request, "post_form.html", context)
 
 
-def post_detail(request):
-    instance = get_object_or_404(Post, id=3)
+def post_detail(request, pk=None):
+    instance = get_object_or_404(Post, pk=pk)
     context = {
         "title": instance.title,
         "instance": instance
@@ -29,11 +36,21 @@ def post_list(request):
     return render(request, "blog_list.html", context)
 
 
-def post_update(request):
+def post_update(request, pk=None):
+    instance = get_object_or_404(Post, pk=pk)
+    form = PostForm(request.POST or None, instance=instance)
+    if form.is_valid():
+        instance = form.save(commit=False)
+        instance.save()
+        messages.success(request, "Saved changes", extra_tags="extra tag")
+        return HttpResponseRedirect(instance.get_absolute_url())
+
     context = {
-        "title": "Update"
+        "title": instance.title,
+        "instance": instance,
+        "form": form,
     }
-    return render(request, "blog_list.html", context)
+    return render(request, "post_form.html", context)
 
 
 def post_delete(request):

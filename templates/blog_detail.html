@@ -1,6 +1,14 @@
-{#{% extends 'base.html' %}#}
+
 <html>
 <body>
+<h1>hi</h1>
+{% if messages %}
+    <ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
 <h1>{{ title }}</h1>
 
 

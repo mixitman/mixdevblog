@@ -1,16 +1,19 @@
-{#{% extends 'base.html' %}#}
-<html>
-<body>
-<h1>{{ title }}</h1>
+{% extends "base.html" %}
+
+{% block blog_list %}
+<h1>hi</h1>
+{% endblock %}
+<div class="b-posts">
+<h1>{{ title }}Hi There</h1>
 
 {% for obj in object_list %}
-    {{ obj.title }}<br/>
+    <a href="{{ obj.get_absolute_url }}">{{ obj.title }}</a><br/>
     {{ obj.content }}<br/>
     {{ obj.timestamp }}<br/>
     {{ obj.updated }}<br/>
     {{ obj.id }}<br/>
 {% endfor %}
-</body>
-</html>
 
+</div>
 
+{#<a href="{% url 'detail' pk=obj.id %}">{{ obj.title }}</a><br/>#}
