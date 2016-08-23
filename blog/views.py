@@ -18,18 +18,18 @@ def post_create(request):
     return render(request, './blog/create.html', context)
 
 
-def post_detail(request, id=None):
-    instance = get_object_or_404(Post, id=id)
+def post_detail(request, slug=None):
+    instance = get_object_or_404(Post, slug=slug)
     context = {
         'title': instance.title,
-        'instance': instance
+        'instance': instance,
     }
     return render(request, './blog/detail.html', context)
 
 
 def post_list(request):
     posts_list = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
-    paginator = Paginator(posts_list, 3)  # Show 25 contacts per page
+    paginator = Paginator(posts_list, 3)  # Show xx contacts per page
     page_request_var = "page"
     page = request.GET.get(page_request_var)
     try:
@@ -48,8 +48,8 @@ def post_list(request):
     return render(request, './blog/blog.html', context)
 
 
-def post_update(request, id=None):
-    instance = get_object_or_404(Post, id=id)
+def post_update(request, slug=None):
+    instance = get_object_or_404(Post, slug=slug)
     form = PostForm(request.POST or None,  request.FILES or None, instance=instance)
     if form.is_valid():
         instance = form.save(commit=False)
@@ -63,8 +63,8 @@ def post_update(request, id=None):
     return render(request, './blog/create.html', context)
 
 
-def post_delete(request, id=None):
-    instance = get_object_or_404(Post, id=id)
+def post_delete(request, slug=None):
+    instance = get_object_or_404(Post, slug=slug)
     instance.delete()
 
     return redirect("blog:post_list")

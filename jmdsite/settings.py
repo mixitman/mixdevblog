@@ -46,10 +46,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # third party apps
+    'ckeditor',
+    'ckeditor_uploader',
+    'social_widgets',
 
     # my apps
     'blog',
-    'newsletter',
+
 ]
 
 MIDDLEWARE = [
@@ -142,10 +145,10 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_in_env", "media_root")
 
-ACCOUNT_ACTIVATION_DAYS = 7
-REGISTRATION_AUTO_LOGIN = True
-CRISPY_TEMPLATE_PACK = 'bootstrap3'
-LOGIN_REDIRECT_URL = '/'
+
+CKEDITOR_IMAGE_BACKEND = "pillow"
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
 
 try:
     from jmdsite.local_settings import *

@@ -267,10 +267,17 @@ nav li {
   box-shadow: 2px 2px 20px #000000;
   overflow: hidden;
 }
-/* line 135, ../sass/styles.scss */
-.blog-posts .blog-thumb {
-  width: 300px;
+
+/* line 131, ../sass/styles.scss */
+.blog-thumb {
+  height: 300px;
+  width: auto;
   float: right;
+}
+
+/* line 136, ../sass/styles.scss */
+#twitter-widget-0 {
+  vertical-align: bottom;
 }
 
 /*            end blog                     */

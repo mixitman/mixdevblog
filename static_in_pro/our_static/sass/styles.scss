@@ -127,15 +127,15 @@ nav {
   padding: 10px;
   @include box-shadow(2px 2px 20px #000000);
   overflow: hidden;
+}
+.blog-thumb {
+  height: 300px;
+  width: auto;
+  float: right;
+}
+#twitter-widget-0 {
 
-  .blog-text {
-
-
-  }
-  .blog-thumb {
-    width: 300px;
-float: right;
-  }
+  vertical-align: bottom;
 }
 
 /*            end blog                     */

@@ -1,17 +1,32 @@
 {% extends 'base.html' %}
+{% load urlify social_widgets staticfiles %}
 {% block head_title %}{{ instance.title }} | {{ block.super }}{% endblock %}
 {% block blog %}
 
 
-    {{ title }}
 
     <div class="blog-posts">
-        {% if instance.image %}<img src="{{ instance.image.url }}"/>{% endif %}
+        {% if instance.featured_image %}
+            <img src="{{ instance.featured_image.url }}" />
+        {% endif %}
         <p>published: {{ instance.published_date }}</p>
         <h1><a href="">{{ instance.title }}</a></h1>
-        <p>{{ instance.article|linebreaksbr }}</p>
+        <div>{{ instance.article }}</div>
+<div class="social-links">
+    {% social_widget_render "facebook/share_button.html" href="" layout="button_count" %}
+    {% social_widget_render "twitter/share_button.html" %}
+</div>
     </div>
-
 {% endblock %}
 
-
+{#<a href="https://www.pinterest.com/pin/create/button/"><img src="{{ instance.featured_image.url }}" /></a>#}
+{#        <a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}">Facebook</a>#}
+{##}
+{#        <a href="https://twitter.com/home?status={{ instance.article|truncatechars:30|urlify }}%20{{ request.build_absolute_uri }}">#}
+{#            Twitter#}
+{#        </a>#}
+{#        <a href='https://plus.google.com/share?url={{ request.build_absolute_uri }}'></a>#}
+{#        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ request.build_absolute_uri }}&title={{ instance.title }}&summary={{ instance.article|urlify }}&source={{ request.build_absolute_uri }}">#}
+{#            Linkedin#}
+{#        </a>#}
+{#        <a href="http://www.reddit.com/submit?url={{ request.build_absolute_uri }}&title={{ instance.title }}">Reddit</a>#}

@@ -22,8 +22,8 @@
 
         <div class="blog-posts">
         <div class="blog-text">
-            {% if post.image %}
-                <img src="{{ post.image.url }}" class="blog-thumb"/>
+            {% if post.featured_image %}
+                <img src="{{ post.featured_image.url }}" class="blog-thumb"/>
             {% endif %}
             <p>{{ post.published_date }}</p>
 
