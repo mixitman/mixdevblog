@@ -10,12 +10,12 @@
     <meta name="author" content="">
     <link rel="icon" href="{% static 'img/ico/favicon.ico' %}">
 
-    <title>a work in progress..</title>
+    <title>{% block head_title %}a work in progress..{% endblock %}</title>
 
     <!-- Bootstrap core CSS -->
     {#    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">#}
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
-              integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
+          integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Reem+Kufi|Source+Code+Pro" rel="stylesheet">
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst"></script>
@@ -25,14 +25,14 @@
 </head>
 <body>
 
-
+<!-- SITE HEADER -->
 <header class="site-header">
-{% include 'navbar.html' %}
-{% block landing %}
-{% endblock %}
+    {% include 'navbar.html' %}
+    {% block landing %}
+    {% endblock %}
 </header>
 
-
+<!-- BLOG BLOCK -->
 <div class="wrap">
     <div class="blog-pre-wrap">
         {% block blog %}

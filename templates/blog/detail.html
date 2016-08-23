@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ instance.title }} | {{ block.super }}{% endblock %}
+{% block blog %}
+
+
+    {{ title }}
+
+    <div class="blog-posts">
+        {% if instance.image %}<img src="{{ instance.image.url }}"/>{% endif %}
+        <p>published: {{ instance.published_date }}</p>
+        <h1><a href="">{{ instance.title }}</a></h1>
+        <p>{{ instance.article|linebreaksbr }}</p>
+    </div>
+
+{% endblock %}
+
+

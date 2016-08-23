@@ -256,14 +256,21 @@ nav li {
   background: #ffffff;
 }
 
-/* line 124, ../sass/styles.scss */
+/* line 123, ../sass/styles.scss */
 .blog-posts {
   background: #bababa;
   margin: 60px 0;
+  height: auto;
   padding: 10px;
   -moz-box-shadow: 2px 2px 20px #000000;
   -webkit-box-shadow: 2px 2px 20px #000000;
   box-shadow: 2px 2px 20px #000000;
+  overflow: hidden;
+}
+/* line 135, ../sass/styles.scss */
+.blog-posts .blog-thumb {
+  width: 300px;
+  float: right;
 }
 
 /*            end blog                     */

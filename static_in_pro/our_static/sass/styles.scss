@@ -94,8 +94,8 @@ li {
 .nolink {
   color: $white;
   &:hover {
-  color: $white;
-}
+    color: $white;
+  }
 }
 .logo a  {
   float: left;
@@ -119,12 +119,23 @@ nav {
   min-height: 1200px;
   margin-top: 80px;
   background: #ffffff;
-
 }
 .blog-posts {
   background: #bababa;
   margin: 60px 0;
+  height: auto;
   padding: 10px;
   @include box-shadow(2px 2px 20px #000000);
+  overflow: hidden;
+
+  .blog-text {
+
+
+  }
+  .blog-thumb {
+    width: 300px;
+float: right;
+  }
 }
+
 /*            end blog                     */

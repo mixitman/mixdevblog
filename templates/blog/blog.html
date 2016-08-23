@@ -1,18 +1,54 @@
 {% extends 'base.html' %}
+{% block head_title %}{{ title }} | {{ block.super }}{% endblock %}
 {% block blog %}
+<div class="pagination">
+    <span class="step-links">
+        {% if posts.has_previous %}
+            <a href="?{{ page_request_var }}={{ posts.previous_page_number }}">previous</a>
+        {% endif %}
 
+        <span class="current">
+            Page {{ posts.number }} of {{ posts.paginator.num_pages }}.
+        </span>
+
+        {% if posts.has_next %}
+            <a href="?{{ page_request_var }}={{ posts.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
 
 
     {% for post in posts %}
 
         <div class="blog-posts">
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
+        <div class="blog-text">
+            {% if post.image %}
+                <img src="{{ post.image.url }}" class="blog-thumb"/>
+            {% endif %}
+            <p>{{ post.published_date }}</p>
+
+                <h1><a href='{{ post.get_absolute_url }}'>{{ post.title }}</a></h1>
+            <p>{{ post.article|linebreaks|truncatechars:200 }}</p>
+</div>
+            <small><p>{{ post.published_date|timesince }} ago</p></small>
         </div>
 
     {% endfor %}
+<div class="pagination">
+    <span class="step-links">
+        {% if posts.has_previous %}
+            <a href="?{{ page_request_var }}={{ posts.previous_page_number }}">previous</a>
+        {% endif %}
 
+        <span class="current">
+            Page {{ posts.number }} of {{ posts.paginator.num_pages }}.
+        </span>
+
+        {% if posts.has_next %}
+            <a href="?{{ page_request_var }}={{ posts.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
 {% endblock %}
 
 
