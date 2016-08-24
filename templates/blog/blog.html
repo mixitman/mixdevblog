@@ -28,7 +28,7 @@
             <p>{{ post.published_date }}</p>
 
                 <h1><a href='{{ post.get_absolute_url }}'>{{ post.title }}</a></h1>
-            <p>{{ post.article|linebreaks|truncatechars:200 }}</p>
+            <p>{{ post.article|linebreaks|truncatechars:500 }}<span><small><a href='{{ post.get_absolute_url }}'>read more</a></small></span></p>
 </div>
             <small><p>{{ post.published_date|timesince }} ago</p></small>
         </div>

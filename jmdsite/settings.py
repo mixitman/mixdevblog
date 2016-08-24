@@ -154,3 +154,4 @@ try:
     from jmdsite.local_settings import *
 except ImportError:
     pass
+
