@@ -10,4 +10,6 @@ class PostForm(forms.ModelForm):
             "featured_image",
             "article",
             "author",
+            "draft",
+            "published_date",
         ]

@@ -9,11 +9,20 @@
         {% if instance.featured_image %}
             <img src="{{ instance.featured_image.url }}" />
         {% endif %}
-        <p>published: {{ instance.published_date }}</p>
-        <h1><a href="">{{ instance.title }}</a></h1>
-        <div>{{ instance.article }}</div>
+        <small><p>Published: {{ instance.published_date }}</p>{% if instance.draft %}<span style="color: red;">Draft</span>{% endif %}</small>
+        {% if instance.author.get_short_name %}
+        <p>Author: {{ instance.author.get_short_name }}</p>
+        {% endif %}
+        {% if user.is_authenticated %}<a href="{{ request.build_absolute_uri }}edit">Edit Post</a>{% endif %}
+        <h1>{{ instance.title }}</h1>
+        <div>{{ instance.article|linebreaks }}</div>
+<hr>
+    </br>
+    <div class="fb-comments" data-href="{{ request.build_absolute_uri }}" data-numposts="5" data-width="100%"></div>
+
 <div class="social-links">
-    {% social_widget_render "facebook/share_button.html" layout="button_count" %}
+    <div class="fb-like" data-href="{{ request.build_absolute_uri }}" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
     {% social_widget_render "twitter/share_button.html" %}
 </div>
     </div>

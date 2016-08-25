@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 {% block head_title %}{{ title }}{% endblock %}
 {% block blog %}
+
+    <div><h1>{{ title }}</h1></div>
+<form method="GET" action="">
+<input type="text" name="q" placeholder="Search Posts" value="{{ request.GET.q }}" />
+<input type="submit" value="Search" />
+</form>
 <div class="pagination">
     <span class="step-links">
         {% if posts.has_previous %}
@@ -25,10 +31,13 @@
             {% if post.featured_image %}
                 <img src="{{ post.featured_image.url }}" class="blog-thumb"/>
             {% endif %}
-            <p>{{ post.published_date }}</p>
+            <p>{{ post.published_date }}{% if post.draft %}<span style="color: red;">  Draft</span>{% endif %}</p>
 
                 <h1><a href='{{ post.get_absolute_url }}'>{{ post.title }}</a></h1>
-            <p>{{ post.article|linebreaks|truncatechars:500 }}<span><small><a href='{{ post.get_absolute_url }}'>read more</a></small></span></p>
+            {% if post.author.get_short_name %}
+            <p>Author: {{ post.author.get_short_name }}</p>
+            {% endif %}
+            <p>{{ post.article|truncatechars:500 }}<span><small><a href='{{ post.get_absolute_url }}'>read more</a></small></span></p>
 </div>
             <small><p>{{ post.published_date|timesince }} ago</p></small>
         </div>
@@ -37,7 +46,7 @@
 <div class="pagination">
     <span class="step-links">
         {% if posts.has_previous %}
-            <a href="?{{ page_request_var }}={{ posts.previous_page_number }}">previous</a>
+            <a href="?{{ page_request_var }}={{ posts.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">previous</a>
         {% endif %}
 
         <span class="current">
@@ -45,7 +54,7 @@
         </span>
 
         {% if posts.has_next %}
-            <a href="?{{ page_request_var }}={{ posts.next_page_number }}">next</a>
+            <a href="?{{ page_request_var }}={{ posts.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">next</a>
         {% endif %}
     </span>
 </div>
