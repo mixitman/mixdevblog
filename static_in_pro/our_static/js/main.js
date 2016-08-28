@@ -32,9 +32,9 @@
         var scroll = $(window).scrollTop();
         var lc = $('.landing-widget');
         if (scroll <= 925){
-             $(lc).css('opacity', 1 - scroll / 280);
+            $(lc).css('opacity', 1 - scroll / 380);
             // $(lc).css('margin-top', 7.47663551 + scroll / 48 + '%');
-            $('.landing-wrap').css('background-position-y', 40 + scroll / 1.5 + '%')
+            // $('.landing-wrap').css('background-position-y', 40 + scroll / 2.5 + '%')
         }
     });
 

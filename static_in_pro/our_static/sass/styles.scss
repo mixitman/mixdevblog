@@ -17,7 +17,7 @@ body {
   padding: 0;
   height: 100%;
   overflow-x: hidden;
-  background: $black;
+  background: $white;
 }
 #pygreen {
   color: $pyGreen;
@@ -25,11 +25,14 @@ body {
 #pyorange {
   color: $pyOrange;
 }
-.site-header {
-  a {
+
+a {
+  text-decoration: none;
+  &:hover {
     text-decoration: none;
   }
 }
+
 ul, ol {
   margin: 0;
   padding: 0;
@@ -43,24 +46,31 @@ li {
 }
 /*  landing                             */
 .landing-wrap {
-  @include span(12);
+  @include container;
   @include clearfix;
   @include background((radial_gradient(360px 360px, rgba(148, 148, 148, 0.31) 10px, rgba(0, 0, 0, 0.8) 600px)), url('../img/library.jpg') no-repeat center fixed);
   background-position-y: 40%;
-  min-height: 600px;
+  min-height: 700px;
 
-  pre {
-    @include span(isolate 6 of 10 at 3);
+  img {
+  width: 100%;
+  height: auto;
+}
+
+  .landing-text {
+    @include span(isolate 5 of 10 at 3);
+    margin-top: span(2);
     border-radius: 16px;
-    border: 1px solid #9d9d9d;
+    //border: 1px solid #9d9d9d;
     color: $white;
-    background-color: rgba(0, 0, 0, 0.70);
-    @include box-shadow(0 0 30px $black);
+    background-color: rgba(0, 0, 0, 0.45);
+    //@include box-shadow(0 0 50px rgba(0, 0, 0, 0.46));
     font-size: 2em;
+    overflow: hidden;
   }
-  .landing-widget {
-    margin-top: span(1);
-  }
+  //.landing-widget {
+  //  margin-top: span(2);
+  //}
 }
 /*           end landing                */
 /*              navbar                  */
@@ -115,27 +125,43 @@ nav {
 
 /*                blog                     */
 .blog-pre-wrap {
-  @include span(isolate 6 of 12 at 4);
-  min-height: 1200px;
-  margin-top: 80px;
+  @include span(isolate 9 of 14 at 4);
+  //min-height: 1200px;
   background: #ffffff;
+  .blog-title {
+    font-family: "Bitstream Vera Sans Mono", Monaco, Courier, monospace;
+    padding-top: 20px;
+  }
 }
 .blog-posts {
-  background: #bababa;
-  margin: 60px 0;
+  background: #ffffff;
+  margin: 30px 0;
   height: auto;
-  padding: 10px;
-  @include box-shadow(2px 2px 20px #000000);
+  @include box-shadow(0 0 4px rgba(0, 0, 0, 0));
   overflow: hidden;
+  .blog-feat-img {
+    width: 100%;
+    height: auto;
+  }
 }
 .blog-thumb {
-  height: 300px;
-  width: auto;
-  float: right;
+  @include span(9 of 20);
+  height: span(3 of 20);
+  float: left;
+  margin: 10px;
+  border: 1px solid $black;
+}
+.blog-text {
+  a {
+    color: #717171;
+  }
 }
 #twitter-widget-0 {
-
   vertical-align: bottom;
 }
 
 /*            end blog                     */
+.blog-create-wrap {
+  @include span(isolate 10 of 12 at 2);
+  margin-top: 100px;
+}

@@ -13,7 +13,7 @@ class BlogAdmin(admin.ModelAdmin):
     class Meta:
         model = Post
 
-    class Media:
-        js = ('ckeditor/ckeditor.js',)
+    # class Media:
+    #     js = ('ckeditor/ckeditor.js',)
 
 admin.site.register(Post, BlogAdmin)

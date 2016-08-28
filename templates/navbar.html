@@ -1,9 +1,12 @@
 {% load staticfiles %}
 
     <div class="nav-wrap" data-toggle="sticky-onscroll">
-        <div class="logo"><a href="/"><span id="pyorange">return</span> render(<span id="pygreen">'home.html'</span>)</a></div>
+        <div class="logo"><a href="/">(<span id="pygreen">'LovingOpenSource'</span>)</a></div>
         <nav>
             <ul>
+                {% if user.is_staff %}
+                    <li class="navitem"><a href="http://{{ request.get_host }}/blog/create">Create New Post</a></li>
+                {% endif %}
                 <li class="navitem nolink">links = [</li>
                 <li class="navitem"><a href="/blog">'Blog'</a>,</li>
                 <li class="navitem"><a href="/">'Site Info'</a>,</li>

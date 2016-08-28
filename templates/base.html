@@ -24,20 +24,21 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
 <!-- SITE HEADER -->
 <header class="site-header">
     {% include 'navbar.html' %}
     {% block landing %}
     {% endblock %}
 </header>
-
 <!-- BLOG BLOCK -->
-<div class="wrap">
-    <div class="blog-pre-wrap">
-        {% block blog %}
-        {% endblock %}
-    </div>
-</div>
+{% block blog-create %}{% endblock %}
+{% block blog %}{% endblock %}
+
+
+
 
 {% include 'javascript.html' %}
 

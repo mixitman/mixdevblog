@@ -2,30 +2,32 @@
 {% load urlify social_widgets staticfiles %}
 {% block head_title %}{{ instance.title }}{% endblock %}
 {% block blog %}
+    <div class="wrap">
+        <div class="blog-pre-wrap">
 
 
+            <div class="blog-posts">
+                {% if instance.featured_image %}
+                    <img class="blog-feat-img" src="{{ instance.featured_image.url }}" />
+                {% endif %}
+                <small><p>Published: {{ instance.published_date }}</p>{% if instance.draft %}<span style="color: red;">Draft</span>{% endif %}</small>
+                {% if instance.author.get_short_name %}
+                    <p>Author: {{ instance.author.get_short_name }}</p>
+                {% endif %}
+                {% if user.is_authenticated %}<a href="{{ request.build_absolute_uri }}edit">Edit Post</a>{% endif %}
+                <h1>{{ instance.title }}</h1>
+                <div class="blog-article">{{ instance.article|safe }}</div>
+                <hr>
+                </br>
+                <div class="fb-comments" data-href="{{ request.build_absolute_uri }}" data-numposts="5" data-width="100%"></div>
 
-    <div class="blog-posts">
-        {% if instance.featured_image %}
-            <img src="{{ instance.featured_image.url }}" />
-        {% endif %}
-        <small><p>Published: {{ instance.published_date }}</p>{% if instance.draft %}<span style="color: red;">Draft</span>{% endif %}</small>
-        {% if instance.author.get_short_name %}
-        <p>Author: {{ instance.author.get_short_name }}</p>
-        {% endif %}
-        {% if user.is_authenticated %}<a href="{{ request.build_absolute_uri }}edit">Edit Post</a>{% endif %}
-        <h1>{{ instance.title }}</h1>
-        <div>{{ instance.article|linebreaks }}</div>
-<hr>
-    </br>
-    <div class="fb-comments" data-href="{{ request.build_absolute_uri }}" data-numposts="5" data-width="100%"></div>
+                <div class="social-links">
+                    <div class="fb-like" data-href="{{ request.build_absolute_uri }}" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-<div class="social-links">
-    <div class="fb-like" data-href="{{ request.build_absolute_uri }}" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-
-    {% social_widget_render "twitter/share_button.html" %}
-</div>
-    </div>
+                    {% social_widget_render "twitter/share_button.html" %}
+                </div>
+            </div>
+        </div></div>
 {% endblock %}
 
 {#<a href="https://www.pinterest.com/pin/create/button/"><img src="{{ instance.featured_image.url }}" /></a>#}

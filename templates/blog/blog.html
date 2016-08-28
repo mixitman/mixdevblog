@@ -1,62 +1,55 @@
-{% extends 'base.html' %}
+{% extends 'home.html' %}
 {% block head_title %}{{ title }}{% endblock %}
 {% block blog %}
+    <div class="wrap">
+        <div class="blog-pre-wrap">
+            <div class="blog-title"><h1>{{ title }}</h1></div>
 
-    <div><h1>{{ title }}</h1></div>
-<form method="GET" action="">
-<input type="text" name="q" placeholder="Search Posts" value="{{ request.GET.q }}" />
-<input type="submit" value="Search" />
-</form>
+
+
+{#        TODO: figure out where to put the search bar  ********************     #}
+{#            <form method="GET" action="">#}
+{#                <input type="text" name="q" placeholder="Search Posts" value="{{ request.GET.q }}" />#}
+{#                <input type="submit" value="Search" />#}
+{#            </form>#}
+            {#<!-- copy/paste pagination from below if I decide I want it --> TODO: delete or add pagination #}
+
+
+            {% for post in posts %}
+
+                <div class="blog-posts">
+
+                        {% if post.featured_image %}
+                            <a href='{{ post.get_absolute_url }}'><img src="{{ post.featured_image.url }}" class="blog-thumb"/></a>
+                        {% endif %}
+                <div class="blog-text">
+                        <h1><a href='{{ post.get_absolute_url }}'>{{ post.title }}</a></h1>
+                        {% if post.author.get_short_name %}
+                            <p>By: {{ post.author.get_short_name }} <span><small>{{ post.published_date|timesince }} ago</small></span></p>
+                        {% endif %}
+                        <p>{{ post.article|truncatechars:200|safe }}<span><small><a href='{{ post.get_absolute_url }}'>read more</a></small></span></p>
+
+                    </div>
+                </div>
+
+            {% endfor %}
+
 <div class="pagination">
     <span class="step-links">
-        {% if posts.has_previous %}
-            <a href="?{{ page_request_var }}={{ posts.previous_page_number }}">previous</a>
-        {% endif %}
+    {% if posts.has_previous %}
+    <a href="?{{ page_request_var }}={{ posts.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">previous</a>
+    {% endif %}
 
-        <span class="current">
-            Page {{ posts.number }} of {{ posts.paginator.num_pages }}.
-        </span>
-
-        {% if posts.has_next %}
-            <a href="?{{ page_request_var }}={{ posts.next_page_number }}">next</a>
-        {% endif %}
+    <span class="current">
+    Page {{ posts.number }} of {{ posts.paginator.num_pages }}.
     </span>
-</div>
 
-
-    {% for post in posts %}
-
-        <div class="blog-posts">
-        <div class="blog-text">
-            {% if post.featured_image %}
-                <img src="{{ post.featured_image.url }}" class="blog-thumb"/>
-            {% endif %}
-            <p>{{ post.published_date }}{% if post.draft %}<span style="color: red;">  Draft</span>{% endif %}</p>
-
-                <h1><a href='{{ post.get_absolute_url }}'>{{ post.title }}</a></h1>
-            {% if post.author.get_short_name %}
-            <p>Author: {{ post.author.get_short_name }}</p>
-            {% endif %}
-            <p>{{ post.article|truncatechars:500 }}<span><small><a href='{{ post.get_absolute_url }}'>read more</a></small></span></p>
-</div>
-            <small><p>{{ post.published_date|timesince }} ago</p></small>
-        </div>
-
-    {% endfor %}
-<div class="pagination">
-    <span class="step-links">
-        {% if posts.has_previous %}
-            <a href="?{{ page_request_var }}={{ posts.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">previous</a>
-        {% endif %}
-
-        <span class="current">
-            Page {{ posts.number }} of {{ posts.paginator.num_pages }}.
-        </span>
-
-        {% if posts.has_next %}
-            <a href="?{{ page_request_var }}={{ posts.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">next</a>
-        {% endif %}
+    {% if posts.has_next %}
+    <a href="?{{ page_request_var }}={{ posts.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">next</a>
+    {% endif %}
     </span>
+    </div>
+</div>
 </div>
 {% endblock %}
 

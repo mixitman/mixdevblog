@@ -5,6 +5,7 @@ from django.db import models
 from django.utils import timezone
 from django.db.models.signals import pre_save
 from django.utils.text import slugify
+from ckeditor_uploader.fields import RichTextUploadingField
 
 
 def upload_location(instance, filename):
@@ -15,7 +16,7 @@ class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, default=1)
     slug = models.SlugField(unique=True)
     title = models.CharField(max_length=200)
-    article = models.TextField()
+    article = RichTextUploadingField()
     featured_image = models.ImageField(upload_to=upload_location,
                                        null=True, blank=True,
                                        width_field="width_field",
@@ -40,8 +41,6 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse("blog:detail", kwargs={"slug": self.slug})
-
-
 
 
 def create_slug(instance, new_slug=None):

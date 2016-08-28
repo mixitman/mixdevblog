@@ -150,6 +150,11 @@ CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
 CKEDITOR_CONFIGS = {
     'default': {
+        'toolbar': None,
+        'height': 300,
+        'width': 1200,
+        'extraPlugins': 'image2,widget,dialogui,codesnippet',
+        'codeSnippet_theme': 'monokai_sublime'
     },
 }
 
