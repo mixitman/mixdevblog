@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'social_widgets',
     # my apps
     'blog',
-
+    'moviecompare',
 ]
 
 MIDDLEWARE = [
@@ -157,7 +157,6 @@ CKEDITOR_CONFIGS = {
         'codeSnippet_theme': 'monokai_sublime'
     },
 }
-
 
 try:
     from jmdsite.local_settings import *

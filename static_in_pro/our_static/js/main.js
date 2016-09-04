@@ -28,15 +28,16 @@
 //         // On page load
 //         stickyToggle(sticky, stickyWrapper, $(window));
 //     });
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        var lc = $('.landing-widget');
-        if (scroll <= 925){
-            $(lc).css('opacity', 1 - scroll / 380);
-            // $(lc).css('margin-top', 7.47663551 + scroll / 48 + '%');
-            // $('.landing-wrap').css('background-position-y', 40 + scroll / 2.5 + '%')
-        }
-    });
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    var lc = $('.landing-widget');
+    if (scroll <= 925){
+        $(lc).css('opacity', 1 - scroll / 380);
+        // $(lc).css('margin-top', 7.47663551 + scroll / 48 + '%');
+        // $('.landing-wrap').css('background-position-y', 40 + scroll / 2.5 + '%')
+    }
+});
+
 
 
 

@@ -1,0 +1,27 @@
+{% extends 'moviecompare/compare.html' %}
+
+{% block movies_returned %}
+<div class="wrap">
+<div class="compare-gallery">
+{% for key in parsed_data.results|dictsort:'release_date' %}
+{% if key.poster_path and key.release_date %}
+    <div class="gallery-item">
+        <img src="http://image.tmdb.org/t/p/w185/{{ key.poster_path }}">
+    <p>{{ key.title }}</p>
+    <p>{{ key.release_date }}</p>
+    </div>
+{% endif %}
+{% endfor %}
+</div>
+</div>
+{% endblock %}
+
+{# style="background: url('http://image.tmdb.org/t/p/w185/{{ key.poster_path }}') no-repeat center; background-size: contain;"#}
+{# <img src="http://image.tmdb.org/t/p/w300/{{ key.poster_path }}">#}
+{#{% for key in parsed_data.results|dictsort:'release_date' %}#}
+{#    {% if key.release_date %}#}
+{##}
+{#    <p><a href="../movies/{{ key.id }}">{{ key.title }}</a></p>#}
+{#    <img src="http://image.tmdb.org/t/p/w300/{{ key.poster_path }}">#}
+{#    {% endif %}#}
+{#{% endfor %}#}

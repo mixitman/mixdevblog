@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block compare %}
+<div style="margin-top: 100px"><h1>Enter a Movie Title</h1></div>
+    <form action="./movies.html" method="POST" style="padding-left: 30px">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit"/>
+    </form>
+{% block movies_returned %}
+    {% endblock %}
+
+{% endblock %}
