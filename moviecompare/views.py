@@ -25,8 +25,7 @@ def search_movie(request):
                         'overview': movie['overview']
                     }
                 )
-            total_pages = response['total_pages']
-            for i in range(2, total_pages + 1):
+            for i in range(2, 5 + 1):
                 response = search.movie(query=query, page=i)
                 for movie in response['results']:
                     parsed_data['results'].append(
@@ -44,6 +43,8 @@ def search_movie(request):
                 "parsed_data": parsed_data
             }
             return render(request, './moviecompare/movies.html', context)
+        else:
+            form = MovieSearch()
     else:
         form = MovieSearch()
 
