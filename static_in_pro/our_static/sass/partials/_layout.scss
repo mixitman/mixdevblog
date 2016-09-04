@@ -11,7 +11,7 @@ $susy: (
         gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
         global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
         debug: (
-                image: show,
+                image: hide,
                 color: rgba(#66f, .25),
                 output: overlay, // background | overlay
                 toggle: bottom left,
