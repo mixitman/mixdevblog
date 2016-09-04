@@ -17,7 +17,7 @@ body {
   padding: 0;
   height: 100%;
   overflow-x: hidden;
-  background: $white;
+  background: $site-bg-color;
 }
 #pygreen {
   color: $pyGreen;
@@ -42,7 +42,7 @@ li {
 }
 .wrap {
   @include container;
-  background: #ffffff;
+  background: $site-bg-color;
 }
 /*  landing                             */
 .landing-wrap {
@@ -53,9 +53,9 @@ li {
   min-height: 700px;
 
   img {
-  width: 100%;
-  height: auto;
-}
+    width: 100%;
+    height: auto;
+  }
 
   .landing-text {
     @include span(isolate 5 of 10 at 3);
@@ -127,14 +127,14 @@ nav {
 .blog-pre-wrap {
   @include span(isolate 9 of 14 at 4);
   //min-height: 1200px;
-  background: #ffffff;
+
   .blog-title {
     font-family: "Bitstream Vera Sans Mono", Monaco, Courier, monospace;
     padding-top: 20px;
   }
 }
 .blog-posts {
-  background: #ffffff;
+
   margin: 30px 0;
   height: auto;
   @include box-shadow(0 0 4px rgba(0, 0, 0, 0));
@@ -145,11 +145,16 @@ nav {
   }
 }
 .blog-thumb {
-  @include span(9 of 20);
-  height: span(3 of 20);
+  width: 400px;
+  height: 150px;
+  overflow: hidden;
   float: left;
   margin: 10px;
   border: 1px solid $black;
+  img {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
 }
 .blog-text {
   a {
@@ -159,6 +164,8 @@ nav {
 #twitter-widget-0 {
   vertical-align: bottom;
 }
+
+
 
 /*            end blog                     */
 .blog-create-wrap {
@@ -175,16 +182,39 @@ nav {
   margin-top: 80px;
 }
 .gallery-item {
-  padding: 2px;
   border: 1px solid #868686;
-  min-height: 300px;
-  background-color: rgba(231, 231, 231, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   @include box-shadow(1px 1px 8px rgba(0, 0, 0, 0.2));
-  @include gallery(1 of 8);
+  @include gallery(2 of 8);
   margin-bottom: gutter(6);
-
+  .material-icons {
+    font-size: 18px;
+  }
   img {
-    margin: 20px 0 0 20px;
-    max-height: 200px;
+    float: left;
+    margin-right: 8px;
+    border-right: 1px solid #a8a8a8;
+  }
+  .gallery-text {
+    color: #717171;
+    padding: 8px;
+    text-align: center;
+    font-family: 'oswald', sans-serif;
+  }
+  a {
+    color: #717171 !important;
+  }
+  :hover{
+    color: #545454 !important;
+  }
+  .gallery-date {
+    float: right;
+  }
+  .gallery-title {
+    text-align: left;
+  }
+  .gallery-overview {
+    padding-top: 10px;
+    text-align: left;
   }
 }

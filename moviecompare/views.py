@@ -21,7 +21,8 @@ def search_movie(request):
                         'id': movie['id'],
                         'poster_path': movie['poster_path'],
                         'release_date': movie['release_date'][:-6],
-                        'popularity': movie['popularity']
+                        'popularity': movie['popularity'],
+                        'overview': movie['overview']
                     }
                 )
             total_pages = response['total_pages']
@@ -34,7 +35,8 @@ def search_movie(request):
                             'id': movie['id'],
                             'poster_path': movie['poster_path'],
                             'release_date': movie['release_date'][:-6],
-                            'popularity': movie['popularity']
+                            'popularity': movie['popularity'],
+                            'overview': movie['overview']
                         }
                     )
             context = {

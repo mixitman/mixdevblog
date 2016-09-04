@@ -20,7 +20,9 @@
                 <div class="blog-posts">
 
                         {% if post.featured_image %}
-                            <a href='{{ post.get_absolute_url }}'><img src="{{ post.featured_image.url }}" class="blog-thumb"/></a>
+                            <div class="blog-thumb">
+                            <a href='{{ post.get_absolute_url }}'><img src="{{ post.featured_image.url }}"/></a>
+                            </div>
                         {% endif %}
                 <div class="blog-text">
                         <h1><a href='{{ post.get_absolute_url }}'>{{ post.title }}</a></h1>
