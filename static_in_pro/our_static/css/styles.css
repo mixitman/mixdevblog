@@ -239,14 +239,19 @@ nav li {
 }
 
 /* gallery */
-/* line 179, ../sass/styles.scss */
+/* line 178, ../sass/styles.scss */
+.movie-search {
+  margin-top: 80px;
+}
+
+/* line 181, ../sass/styles.scss */
 .compare-gallery {
   padding-right: 1.88679245%;
   padding-left: 1.88679245%;
   margin-top: 80px;
 }
 
-/* line 184, ../sass/styles.scss */
+/* line 186, ../sass/styles.scss */
 .gallery-item {
   border: 1px solid #868686;
   background-color: rgba(255, 255, 255, 0.6);
@@ -282,40 +287,40 @@ nav li {
   margin-right: -100%;
   clear: none;
 }
-/* line 190, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 .gallery-item .material-icons {
   font-size: 18px;
 }
-/* line 193, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 .gallery-item img {
   float: left;
   margin-right: 8px;
   border-right: 1px solid #a8a8a8;
 }
-/* line 198, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 .gallery-item .gallery-text {
   color: #717171;
   padding: 8px;
   text-align: center;
   font-family: 'oswald', sans-serif;
 }
-/* line 204, ../sass/styles.scss */
+/* line 206, ../sass/styles.scss */
 .gallery-item a {
   color: #717171 !important;
 }
-/* line 207, ../sass/styles.scss */
+/* line 209, ../sass/styles.scss */
 .gallery-item:hover {
   color: #545454 !important;
 }
-/* line 210, ../sass/styles.scss */
+/* line 212, ../sass/styles.scss */
 .gallery-item .gallery-date {
   float: right;
 }
-/* line 213, ../sass/styles.scss */
+/* line 215, ../sass/styles.scss */
 .gallery-item .gallery-title {
   text-align: left;
 }
-/* line 216, ../sass/styles.scss */
+/* line 218, ../sass/styles.scss */
 .gallery-item .gallery-overview {
   padding-top: 10px;
   text-align: left;

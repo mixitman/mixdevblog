@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.conf import settings
+
 from .forms import MovieSearch
 import tmdbsimple as tmdb
 
@@ -49,3 +50,24 @@ def search_movie(request):
         form = MovieSearch()
 
     return render(request, './moviecompare/compare.html', {"form": form})
+
+
+def get_movie(request, movid):
+    movie = tmdb.Movies(movid)
+    response = movie.info()
+    context = {
+        'response': response
+    }
+    return render(request, './moviecompare/detail.html', context)
+
+
+# def post_detail(request, slug=None):
+#     instance = get_object_or_404(Post, slug=slug)
+#     if instance.published_date > timezone.now() or instance.draft:
+#         if not request.user.is_staff or not request.user.is_superuser:
+#             raise Http404
+#     context = {
+#         'title': instance.title,
+#         'instance': instance,
+#     }
+#     return render(request, './blog/detail.html', context)

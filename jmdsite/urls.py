@@ -29,7 +29,6 @@ urlpatterns = [
     url(r'^blog/', include('blog.urls', namespace='blog')),
     url(r'^compare/', include('moviecompare.urls', namespace='compare')),
 
-    # url(r'^posts/', include("posts.urls", namespace='posts')),
 
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     # base admin url -

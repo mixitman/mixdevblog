@@ -3,13 +3,13 @@
 {% block movies_returned %}
 <div class="wrap">
 <div class="compare-gallery">
-{% for key in parsed_data.results|dictsort:'release_date' %}
+{% for key in parsed_data.results|dictsortreversed:'release_date' %}
 {% if key.poster_path and key.release_date and key.title and key.overview %}
     <div class="gallery-item">
         <img src="http://image.tmdb.org/t/p/w185/{{ key.poster_path }}">
    <div class="gallery-text">
        <div class="gallery-date"><h5><span><i class="material-icons">date_range</i></span> {{ key.release_date }}</h5></div>
-        <div class="gallery-title"><h3><a href="../movies/{{ key.id }}">{{ key.title }}</a></h3></div>
+        <div class="gallery-title"><h3><a href="{% url 'compare:movie_detail' movid=key.id %}">{{ key.title }}</a></h3></div>
        <div class="gallery-overview">{{ key.overview|truncatechars:80 }}</div>
        </div>
     </div>
@@ -28,3 +28,5 @@
 {#    <img src="http://image.tmdb.org/t/p/w300/{{ key.poster_path }}">#}
 {#    {% endif %}#}
 {#{% endfor %}#}
+
+{#<div class="gallery-title"><h3><a href="../detail/{{ key.id }}">{{ key.title }}</a></h3></div>#}
