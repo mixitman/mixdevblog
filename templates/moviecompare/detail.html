@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% block movie_detail %}
     <h1 style="margin-top: 60px"></h1>
-    {{ response }}
+    <h1>{{ response.title }}</h1>
+    <img src="http://image.tmdb.org/t/p/w185/{{ response.poster_path }}">
+    <p>{{ response.overview }}</p>
 {% endblock %}
 
