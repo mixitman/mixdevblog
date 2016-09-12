@@ -3,6 +3,7 @@
 {% block movies_returned %}
 <div class="wrap">
 <div class="compare-gallery">
+
 {% for key in parsed_data.results|dictsortreversed:'release_date' %}
 {% if key.poster_path and key.release_date and key.title and key.overview %}
     <div class="gallery-item">

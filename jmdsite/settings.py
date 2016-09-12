@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     # third party apps
     'ckeditor',
     'ckeditor_uploader',
+    'el_pagination',
     'social_widgets',
     # my apps
     'blog',

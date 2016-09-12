@@ -8,6 +8,9 @@ tmdb.API_KEY = settings.TMDB_API_KEY
 
 
 def search_movie(request):
+    """
+    Search movie title and return 5 pages of results
+    """
     parsed_data = {'results': []}
     if request.method == 'POST':
         form = MovieSearch(request.POST)
@@ -53,6 +56,9 @@ def search_movie(request):
 
 
 def get_movie(request, movid):
+    """
+    from search/movie results, get details by movie id (movid)
+    """
     movie = tmdb.Movies(movid)
     response = movie.info()
     context = {
