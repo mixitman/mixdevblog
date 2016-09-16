@@ -4,16 +4,14 @@
     <div class="wrap">
         <div class="compare-gallery">
 
-            {% for key in parsed_data.results|dictsortreversed:'release_date' %}
+            {% for key in parsed_data.results|dictsortreversed:'popularity' %}
                 {% if key.poster_path and key.release_date and key.title and key.overview %}
                     <div class="gallery-item">
                         <div class="gallery-image">
-                            <img src="http://image.tmdb.org/t/p/w300/{{ key.poster_path }}" alt="{{ key.title }}" >
+                            <img src="http://image.tmdb.org/t/p/w185/{{ key.poster_path }}" alt="{{ key.title }}" >
                             <div class="gallery-image__icons">
-                                <a href="{% url 'compare:movie_detail' movid=key.id %}"><i class="material-icons">playlist_add</i></a>
-                                <div class="gallery-image__text">
-                                    <p>ADD TO COMPARE</p>
-                                </div>
+                                <a href="{% url 'compare:movie_detail' movid=key.id %}">
+                                    <i class="material-icons" data-toggle="tooltip" data-placement="right" title="Add to Compare">playlist_add</i></a>
                             </div>
                         </div>
                         <div class="gallery-text">
@@ -21,7 +19,7 @@
                                 <h5><span><i class="material-icons">date_range</i></span> {{ key.release_date }}</h5>
                             </div>
                             <div class="gallery-title">
-                                <h4><a href="{% url 'compare:movie_detail' movid=key.id %}">{{ key.title }}</a></h4>
+                                <h4><a href="{% url 'compare:movie_detail' movid=key.id %}">{{ key.title|truncatechars:30 }}</a></h4>
                             </div>
                             <div class="gallery-overview">
                                 {{ key.overview|truncatechars:90 }}

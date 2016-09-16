@@ -24,7 +24,7 @@ def search_movie(request):
                         'title': movie['title'],
                         'id': movie['id'],
                         'poster_path': movie['poster_path'],
-                        'release_date': movie['release_date'],
+                        'release_date': movie['release_date'][:-6],
                         'popularity': movie['popularity'],
                         'overview': movie['overview']
                     }
@@ -37,7 +37,7 @@ def search_movie(request):
                             'title': movie['title'],
                             'id': movie['id'],
                             'poster_path': movie['poster_path'],
-                            'release_date': movie['release_date'],
+                            'release_date': movie['release_date'][:-6],
                             'popularity': movie['popularity'],
                             'overview': movie['overview']
                         }
