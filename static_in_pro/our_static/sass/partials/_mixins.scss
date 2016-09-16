@@ -1,0 +1,19 @@
+@import "compass/css3/text-shadow";
+
+@mixin transition ($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin text-stroke-with-shadow($thickness, $color, $blur) {
+   @include text-shadow( $thickness 0 $blur $color,
+                        (-$thickness) 0 $blur $color,
+                        0 $thickness $blur $color,
+                        0 (-$thickness) $blur $color,
+                        ($thickness/2) ($thickness/2) $blur $color,
+                        ((-$thickness)/2) ((-$thickness)/2) $blur $color,
+                        ($thickness/2) ((-$thickness)/2) $blur $color,
+                        ((-$thickness)/2) ($thickness/2) $blur $color);
+}

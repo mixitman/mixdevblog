@@ -1,23 +1,37 @@
 {% extends 'moviecompare/compare.html' %}
 
 {% block movies_returned %}
-<div class="wrap">
-<div class="compare-gallery">
+    <div class="wrap">
+        <div class="compare-gallery">
 
-{% for key in parsed_data.results|dictsortreversed:'release_date' %}
-{% if key.poster_path and key.release_date and key.title and key.overview %}
-    <div class="gallery-item">
-        <img src="http://image.tmdb.org/t/p/w185/{{ key.poster_path }}">
-   <div class="gallery-text">
-       <div class="gallery-date"><h5><span><i class="material-icons">date_range</i></span> {{ key.release_date }}</h5></div>
-        <div class="gallery-title"><h3><a href="{% url 'compare:movie_detail' movid=key.id %}">{{ key.title }}</a></h3></div>
-       <div class="gallery-overview">{{ key.overview|truncatechars:80 }}</div>
-       </div>
+            {% for key in parsed_data.results|dictsortreversed:'release_date' %}
+                {% if key.poster_path and key.release_date and key.title and key.overview %}
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="http://image.tmdb.org/t/p/w300/{{ key.poster_path }}" alt="{{ key.title }}" >
+                            <div class="gallery-image__icons">
+                                <a href="{% url 'compare:movie_detail' movid=key.id %}"><i class="material-icons">playlist_add</i></a>
+                                <div class="gallery-image__text">
+                                    <p>ADD TO COMPARE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-text">
+                            <div class="gallery-date">
+                                <h5><span><i class="material-icons">date_range</i></span> {{ key.release_date }}</h5>
+                            </div>
+                            <div class="gallery-title">
+                                <h4><a href="{% url 'compare:movie_detail' movid=key.id %}">{{ key.title }}</a></h4>
+                            </div>
+                            <div class="gallery-overview">
+                                {{ key.overview|truncatechars:90 }}
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
-{% endif %}
-{% endfor %}
-</div>
-</div>
 {% endblock %}
 
 {# style="background: url('http://image.tmdb.org/t/p/w185/{{ key.poster_path }}') no-repeat center; background-size: contain;"#}
